@@ -48,6 +48,32 @@ body {
     font-size: 20px;
 }
 
+.main-content p{
+    padding-bottom: 3%;
+}
+
+#button a {
+    border-radius: 18px;
+    background: #0071e3;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#button a:hover {
+    background: #4297ed;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+#button {
+    text-align: center;
+}
+
 .contact {
     text-align: center;
     padding: 5%;
@@ -55,4 +81,35 @@ body {
 
 .contact a {
     margin: 5%;
+}
+
+.definitions h2 {
+    font-family: SFProDisplayBold;
+    text-align: left;
+    font-size: 50px;
+    color: #333;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 0px;
+    margin-top: 3%;
+}
+
+.definitions a {
+    text-decoration: none;
+    color: #333;
+}
+
+.definitions a:hover {
+    color: #757575;
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+
+.definitions p {
+    font-family: SFProDisplayLight;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 30px;
+    margin-top: 0px;
 }
