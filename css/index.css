@@ -1,0 +1,58 @@
+@font-face {
+    src: url("/fonts/SF-Pro-Display-Light.otf");
+    font-family: SFProDisplayLight;
+}
+
+@font-face {
+    src: url("/fonts/SF-Pro-Display-Bold.otf");
+    font-family: SFProDisplayBold; 
+}
+
+.navbar {
+    text-align: center;
+    padding : 1%;
+    background-color: #333;
+    opacity: 0.9;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 5%;
+    color: white;
+    font-family: SFProDisplayLight;
+    font-size: 20;
+}
+
+.navbar a:hover {
+    color: rgb(190, 190, 190);
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    font-family: SFProDisplayBold;
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+}
+
+.main-content {
+    font-family: SFProDisplayLight;
+    text-align: justify;
+    padding: 0% 20%;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+    padding: 5%;
+}
+
+.contact a {
+    margin: 5%;
+}
