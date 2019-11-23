@@ -47,8 +47,9 @@ body {
     font-size: 50px;
     color: #333;
     padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 0px;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
 .definitions a {
@@ -66,6 +67,7 @@ body {
 .definitions p {
     font-family: SFProDisplayLight;
     padding-left: 2%;
+    padding-right: 2%;
     font-size: 30px;
     margin-top: 0px;
 }
