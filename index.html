@@ -3,6 +3,7 @@
 <head>
     <title>Chemistry 11</title>
     <link rel="stylesheet", type="text/css", href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="navbar">
@@ -11,11 +12,11 @@
             <a href="definitions.html">Definitions</a>
         </nav>
     </div>
-    <div class="title">
+    <div class="title" data-aos="fade-down">
         <h1>Chemistry 11</h1>
     </div>
     <div class="main-content">
-        <p>This website serves as a repository for all the Chemistry definitions and concepts
+        <p data-aos="fade-down">This website serves as a repository for all the Chemistry definitions and concepts
             I have learned in Grade 11. This website by no means cover everything learned, but
             should serve a good starting point for studying before tests. You may notice this 
             website looks very similar to Apple's. That's because <s>I'm an Apple fan boy</s> I 
@@ -27,12 +28,18 @@
         </div>
     </div>
     <div class="contact">
-        <a id="github", href="https://github.com/RyanL123">
-            <img src="images/GitHub-Mark-120px-plus.png", title="GitHub", height=32px, width=32px>
+        <a id="github" href="https://github.com/RyanL123">
+            <img src="images/GitHub-Mark-120px-plus.png" title="GitHub" height=32px width=32px>
         </a>
-        <a id="instagram", href="https://www.instagram.com/ryan.lllllll/">
-            <img src="images/instagram.png", title="Instagram", height=32px, width=32px>
+        <a id="instagram" href="https://www.instagram.com/ryan.lllllll/">
+            <img src="images/instagram.png" title="Instagram" height=32px width=32px>
         </a>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
 </html>
