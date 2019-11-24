@@ -112,7 +112,7 @@ var definitions = {
         },
         {
             Term: "Complete Combustion",
-            Definition: "C&#832xH&#832y + O&#8322 → CO&#8322 + H&#8322O",
+            Definition: "C&#8339H&#7527 + O&#8322 → CO&#8322 + H&#8322O",
             Link: "https://simple.wikipedia.org/wiki/Combustion"
         },
         {
@@ -191,7 +191,7 @@ var definitions = {
             Link: "https://simple.wikipedia.org/wiki/Hydration"
         },
         {
-            Term: "Stochiometry",
+            Term: "Stoichiometry",
             Definition: "Relationship between the reactants and products in a chemical equation",
             Link: "https://simple.wikipedia.org/wiki/Stoichiometry"
         },
@@ -212,6 +212,6 @@ definitions.definitions.sort(
 //Write elements in order, formatting them as hyperlinks
 var output = document.getElementById('definitions');
 for (var i = 0; i < definitions.definitions.length; i++){
-    document.getElementById("definitions").innerHTML += "<h2>" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2>"
-    document.getElementById("definitions").innerHTML += "<p>" + definitions.definitions[i].Definition + "</p>"
+    document.getElementById("definitions").innerHTML += "<h2 data-aos=\"fade-right\">" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2>"
+    document.getElementById("definitions").innerHTML += "<p data-aos=\"fade-right\">" + definitions.definitions[i].Definition + "</p>"
 }

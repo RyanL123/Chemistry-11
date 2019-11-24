@@ -3,6 +3,7 @@
 <head>
     <title>Chemistry 11</title>
     <link rel="stylesheet", type="text/css", href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <div class="navbar">
@@ -11,11 +12,25 @@
             <a href="definitions.html">Definitions</a>
         </nav>
     </div>
-    <div class="title">
+    <div class="title" data-aos="fade-down">
         <h1>Definitions</h1>
     </div>
     <div class="definitions", id="definitions">
     </div>
     <script src="js/definitions.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
 </body>
+<footer>
+    <a id="github" href="https://github.com/RyanL123">
+        <img src="images/GitHub-Mark-120px-plus.png" title="GitHub" height=32px width=32px>
+    </a>
+    <a id="instagram" href="https://www.instagram.com/ryan.lllllll/">
+        <img src="images/instagram.png" title="Instagram" height=32px width=32px>
+    </a>
+</footer>
 </html>
