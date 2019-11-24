@@ -109,13 +109,21 @@ body {
     text-align: center;
 }
 
-.contact {
+.filter {
     text-align: center;
-    padding: 5%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
-.contact a {
-    margin: 5%;
+#filter {
+    font-size: 20px;
+    width: 50%;
+    border-radius: 32px;
+    padding: 16px;
+    border-color: #333;
 }
 
 .definitions h2 {
@@ -127,11 +135,6 @@ body {
     padding-right: 2%;
     margin-bottom: 0px;
     margin-top: 3%;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 .definitions a {
@@ -152,11 +155,6 @@ body {
     padding-right: 2%;
     font-size: 30px;
     margin-top: 0px;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 footer {

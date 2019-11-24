@@ -210,8 +210,29 @@ definitions.definitions.sort(
 );
 
 //Write elements in order, formatting them as hyperlinks
-var output = document.getElementById('definitions');
 for (var i = 0; i < definitions.definitions.length; i++){
-    document.getElementById("definitions").innerHTML += "<h2 data-aos=\"fade-right\">" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2>"
-    document.getElementById("definitions").innerHTML += "<p data-aos=\"fade-right\">" + definitions.definitions[i].Definition + "</p>"
+    document.getElementById("definitions").innerHTML += "<div class=\"definitions\" data-aos=\"zoom-in-up\"><h2>" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
+}
+
+//Filters definitions based on whats in the search bar
+function filter(){
+    //Get objects
+    var input = document.getElementById("filter");
+    var filter = input.value.toUpperCase();
+    var container = document.getElementById("definitions");
+    var definitions = container.getElementsByClassName("definitions");
+
+    //Iterate through definitions
+    for (var i = 0; i < definitions.length; i++){
+        var title = definitions[i].querySelector(".definitions h2");
+        var content = definitions[i].querySelector(".definitions p")
+
+        //Only show if content in filter matches content in definitions
+        if (title.innerText.toUpperCase().indexOf(filter) > -1 || content.innerText.toUpperCase().indexOf(filter) > -1){
+            definitions[i].style.display = "";
+        }
+        else {
+            definitions[i].style.display = "none";
+        }
+    }
 }
