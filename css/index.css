@@ -124,6 +124,7 @@ body {
     border-radius: 32px;
     padding: 16px;
     border-color: #333;
+    font-family: SFProDisplayLight;
 }
 
 .definitions h2 {
@@ -135,6 +136,11 @@ body {
     padding-right: 2%;
     margin-bottom: 0px;
     margin-top: 3%;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 .definitions a {
@@ -155,6 +161,11 @@ body {
     padding-right: 2%;
     font-size: 30px;
     margin-top: 0px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
 footer {
