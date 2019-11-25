@@ -211,7 +211,7 @@ definitions.definitions.sort(
 
 //Write elements in order, formatting them as hyperlinks
 for (var i = 0; i < definitions.definitions.length; i++){
-    document.getElementById("definitions").innerHTML += "<div class=\"definitions\" data-aos=\"zoom-in-up\"><h2>" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
+    document.getElementById("definitions").innerHTML += "<div class=\"definitions\"><h2>" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
 }
 
 //Filters definitions based on whats in the search bar
@@ -221,6 +221,13 @@ function filter(){
     var filter = input.value.toUpperCase();
     var container = document.getElementById("definitions");
     var definitions = container.getElementsByClassName("definitions");
+
+    for (var i = 0; i < definitions.length; i++){
+        var title = definitions[i].querySelector(".definitions h2");
+        var content = definitions[i].querySelector(".definitions p")
+
+        definitions[i].style.display = "none";
+    }
 
     //Iterate through definitions
     for (var i = 0; i < definitions.length; i++){
