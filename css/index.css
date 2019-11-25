@@ -125,6 +125,7 @@ body {
     padding: 16px;
     border-color: #333;
     font-family: SFProDisplayLight;
+    outline: none;
 }
 
 .definitions h2 {
