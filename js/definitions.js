@@ -17,7 +17,7 @@ var definitions = {
         },
         {
             Term: "Electron Affinity",
-            Definition: "Amount of energy released would give to gain an electron",
+            Definition: "Amount of energy released when an atom gains an electron",
             Link: "https://en.wikipedia.org/wiki/Electron_affinity"
         },
         {
@@ -199,6 +199,71 @@ var definitions = {
             Term: "Limiting Reactant/Reagent",
             Definition: "The substance that is totally consumed when the chemical reaction is complete. The amount of product formed is limited by this reagent, since the reaction cannot continue without it",
             Link: "https://en.wikipedia.org/wiki/Limiting_reagent"
+        },
+        {
+            Term: "Solution",
+            Definition: "Homogeneous mixture of two or more substances",
+            Link: "https://simple.wikipedia.org/wiki/Solution",
+        },
+        {
+            Term: "Solute",
+            Definition: "Substance that dissolves in solvent to become a solution (Usually substance that is in lesser quantity)",
+            Link: "https://simple.wikipedia.org/wiki/Solution"
+        },
+        {
+            Term: "Solvent",
+            Definition: "Becomes a solution by dissolving a solute. Usually a liquid (Usually substance that is in higher quantity)",
+            Link: "https://simple.wikipedia.org/wiki/Solution"
+        },
+        {
+            Term: "Homogeneous Mixture",
+            Definition: "A mixture that contains one visible part",
+            Link: "https://en.wikipedia.org/wiki/Homogeneous_and_heterogeneous_mixtures"
+        },
+        {
+            Term: "Heterogeneous Mixture",
+            Definition: "A mixture that contains two or more visible parts",
+            Link: "https://en.wikipedia.org/wiki/Homogeneous_and_heterogeneous_mixtures"
+        },
+        {
+            Term: "Concentration",
+            Definition: "Ratio of the quantity of solute to the quantity of solution or solvent",
+            Link: "https://simple.wikipedia.org/wiki/Concentration"
+        },
+        {
+            Term: "Concentrated Solution",
+            Definition: "Solution with a relatively large quantity of solute dissolved per unit volume of solution",
+            Link: "https://simple.wikipedia.org/wiki/Concentration"
+        },
+        {
+            Term: "Dilute Solution",
+            Definition: "Solution with a relatively small quantity of solute dissolved per unit volume of solution",
+            Link: "https://simple.wikipedia.org/wiki/Concentration"
+        },
+        {
+            Term: "Alloy",
+            Definition: "Solution of two or more metals",
+            Link: "https://simple.wikipedia.org/wiki/Alloy"
+        },
+        {
+            Term: "Aqueous Solution",
+            Definition: "Solution in which water is the solvent",
+            Link: "https://simple.wikipedia.org/wiki/Aqueous_solution"
+        },
+        {
+            Term: "PH",
+            Definition: "Scale used to specify how acidic or basic a water-based solution is",
+            Link: "https://simple.wikipedia.org/wiki/PH"
+        },
+        {
+            Term: "Acid",
+            Definition: "Substance that is capable of donating a hydrogen ion",
+            Link: "https://simple.wikipedia.org/wiki/Acid"
+        },
+        {
+            Term: "Base",
+            Definition: "Substance that is capable of accepting a hydrogen ion",
+            Link: "https://simple.wikipedia.org/wiki/Base_(chemistry)"
         }
     ]
 }
@@ -222,6 +287,7 @@ function filter(){
     var container = document.getElementById("definitions");
     var definitions = container.getElementsByClassName("definitions");
 
+    //Initially hide all elements
     for (var i = 0; i < definitions.length; i++){
         var title = definitions[i].querySelector(".definitions h2");
         var content = definitions[i].querySelector(".definitions p")
