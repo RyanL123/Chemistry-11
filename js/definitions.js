@@ -264,6 +264,31 @@ var definitions = {
             Term: "Base",
             Definition: "Substance that is capable of accepting a hydrogen ion",
             Link: "https://simple.wikipedia.org/wiki/Base_(chemistry)"
+        },
+        {
+            Term: "Hydration",
+            Definition: "Process in which ions are surrounded by water molecules",
+            Link: "https://en.wikipedia.org/wiki/Hydration_reaction"
+        },
+        {
+            Term: "Dissociation",
+            Definition: "Separation of individual ions from an ionic compound as it dissolves in water",
+            Link: "https://en.wikipedia.org/wiki/Dissociation_(chemistry)"
+        },
+        {
+            Term: "Saturated Solution",
+            Definition: "Solution that contains the maximum quantity of solute at a given temperature and pressure",
+            Link: "https://en.wikipedia.org/wiki/Saturated_and_unsaturated_compounds"
+        },
+        {
+            Term: "Unsaturated Solution",
+            Definition: "Solution in which more solute can dissolve at a given temperature and pressure",
+            Link: "https://en.wikipedia.org/wiki/Saturated_and_unsaturated_compounds"
+        },
+        {
+            Term: "Supersaturated Solution",
+            Definition: "Solution that contains more than the maximum quantity of solute that it should at a given temperature and pressure",
+            Link: "https://simple.wikipedia.org/wiki/Supersaturation"
         }
     ]
 }
@@ -303,9 +328,6 @@ function filter(){
         //Only show if content in filter matches content in definitions
         if (title.innerText.toUpperCase().indexOf(filter) > -1 || content.innerText.toUpperCase().indexOf(filter) > -1){
             definitions[i].style.display = "";
-        }
-        else {
-            definitions[i].style.display = "none";
         }
     }
 }
