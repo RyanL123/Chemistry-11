@@ -301,7 +301,7 @@ definitions.definitions.sort(
 
 //Write elements in order, formatting them as hyperlinks
 for (var i = 0; i < definitions.definitions.length; i++){
-    document.getElementById("definitions").innerHTML += "<div class=\"definitions\"><h2>" + "<a href=" + definitions.definitions[i].Link + ">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
+    document.getElementById("definitions").innerHTML += "<div class=\"definitions\"><h2>" + "<a href=" + definitions.definitions[i].Link + " target=\"_blank\">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
 }
 
 //Filters definitions based on whats in the search bar
