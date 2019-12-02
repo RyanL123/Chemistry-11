@@ -174,9 +174,6 @@ body {
 
 #down-arrow {
     margin-top: 40px;
-    position: absolute;
-    left: 0;
-    right: 0;
     text-align: center;
 }
 
@@ -185,9 +182,12 @@ body {
 }
 
 #site-info {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
-    background-size: 100%;
+}
+
+.site-info-div {
+    padding-top: 5%;
 }
 
 #site-info img {
