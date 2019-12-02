@@ -15,21 +15,18 @@
             <a href="polyatomic.html">Polyatomic Ions</a>
         </nav>
     </div>
-    <div class="title" data-aos="fade-down">
-        <h1 id="definition-title">Definitions</h1>
+    <div class="polyatomic-table">
+        <table id="polyatomic-table" align="center">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Formula</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th onclick="sortTable(2)">Charge</th>
+                </tr>
+            </thead>
+        </table>
     </div>
-    <div id="filter-div">
-        <input type="text" placeholder="Filter:" id="filter" onkeyup="filter()">
-    </div>
-    <div id="definitions-div">
-    </div>
-    <script src="js/definitions.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: false
-        });
-    </script>
+    <script src="js/polyatomic.js"></script>
 </body>
 <footer>
     <a href="https://github.com/RyanL123"><img src="images/logos/GitHubLogo.png" title="GitHub" height=32px width=32px></a>
