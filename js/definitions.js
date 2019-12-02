@@ -299,6 +299,11 @@ var definitions = {
             Term: "Percentage Concentration",
             Definition: "Ratio of volume of solute to volume of solution",
             Link: "https://en.wikipedia.org/wiki/Percentage_solution"
+        },
+        {
+            Term: "Dilution",
+            Definition: "Process of reducing the concentration of a solution; usually done by adding more solvent",
+            Link: "https://en.wikipedia.org/wiki/Dilution_(equation)"
         }
     ]
 }

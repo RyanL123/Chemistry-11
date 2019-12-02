@@ -10,15 +10,14 @@
 
         gtag('config', 'UA-153551737-1');
     </script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/index.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
     <title>Chemistry 11</title>
     <link rel="stylesheet", type="text/css", href="css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/logos/favicon.png">
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar sticky" id="navbar">
         <nav>
             <a href="index.html">Home</a>
             <a href="definitions.html">Definitions</a>
@@ -49,10 +48,10 @@
             </div>
         </div>
     </div>
-    <div id="go-to-definitions-button">
+    <div id="go-to-definitions-button" data-aos="fade">
         <a href="definitions.html", role="button">Go To Definitions</a>
     </div>
-    <div class="main-content">
+    <div class="main-content" data-aos="fade-up">
         <h2 class="subtitle">What's this for?</h2>
         <p>This website serves as a repository for all the Chemistry definitions and concepts
                 I have learned in Grade 11. This website by no means cover everything in the Gr 11 curriculum, but
@@ -61,6 +60,7 @@
         </p>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/index.js"></script>
     <script>
         AOS.init({
             once: true,
