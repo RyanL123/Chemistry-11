@@ -59,9 +59,10 @@
 
 .navbar {
     text-align: center;
-    padding : 1%;
-    background-color: #333;
-    opacity: 0.9;
+    padding : 1% 0%;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .navbar a {
@@ -77,6 +78,12 @@
     -webkit-transition: color 100ms linear;
     -ms-transition: color 100ms linear;
     transition: color 100ms linear;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 body {
@@ -132,11 +139,6 @@ body {
     text-align: justify;
     padding: 0% 15%;
     font-size: 20px;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
 }
 
 .main-content p{
@@ -173,7 +175,7 @@ body {
 }
 
 #down-arrow {
-    margin-top: 40px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -182,7 +184,6 @@ body {
 }
 
 #site-info {
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -198,7 +199,7 @@ body {
 
 .site-info-div p {
     font-family: SFProDisplayLight;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 0;
     margin-bottom: 40px;
 }
@@ -283,6 +284,7 @@ body {
 }
 
 #periodictable {
+    padding-top: 3%;
     width: 100%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -293,7 +295,7 @@ body {
 
 .polyatomic-table {
     font-family: SFProDisplayLight;
-    padding-top: 3%;
+    padding-top: 5%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
