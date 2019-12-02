@@ -289,6 +289,16 @@ var definitions = {
             Term: "Supersaturated Solution",
             Definition: "Solution that contains more than the maximum quantity of solute that it should at a given temperature and pressure",
             Link: "https://simple.wikipedia.org/wiki/Supersaturation"
+        },
+        {
+            Term: "Molarity",
+            Definition: "Moles of solute/Liters of solution",
+            Link: "https://simple.wikipedia.org/wiki/Molar_concentration"
+        },
+        {
+            Term: "Percentage Concentration",
+            Definition: "Ratio of volume of solute to volume of solution",
+            Link: "https://en.wikipedia.org/wiki/Percentage_solution"
         }
     ]
 }
@@ -301,7 +311,7 @@ definitions.definitions.sort(
 
 //Write elements in order, formatting them as hyperlinks
 for (var i = 0; i < definitions.definitions.length; i++){
-    document.getElementById("definitions").innerHTML += "<div class=\"definitions\"><h2>" + "<a href=" + definitions.definitions[i].Link + " target=\"_blank\">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
+    document.getElementById("definitions-div").innerHTML += "<div class=\"definitions\"><h2>" + "<a href=" + definitions.definitions[i].Link + " target=\"_blank\">" + definitions.definitions[i].Term + "</a></h2><p>" + definitions.definitions[i].Definition + "</p></div>"
 }
 
 //Filters definitions based on whats in the search bar
@@ -309,7 +319,7 @@ function filter(){
     //Get objects
     var input = document.getElementById("filter");
     var filter = input.value.toUpperCase();
-    var container = document.getElementById("definitions");
+    var container = document.getElementById("definitions-div");
     var definitions = container.getElementsByClassName("definitions");
 
     //Initially hide all elements
