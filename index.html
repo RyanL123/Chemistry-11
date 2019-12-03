@@ -10,7 +10,8 @@
 
         gtag('config', 'UA-153551737-1');
     </script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
     <title>Chemistry 11</title>
     <link rel="stylesheet", type="text/css", href="css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,27 +30,40 @@
         <h1 id="main-title">Chemistry 11</h1>
         <h3>Simple. Compact. Minimal.</h3>
         <div id="down-arrow">
-            <img src="images/down-arrow.png" width=50>
+            <img onclick="smoothScroll()" src="images/down-arrow.png" width=50>
         </div>
     </div>
     <div id="site-info">
         <div class="site-info-div">
-            <h2 class="subtitle float-left">Compact Definitions</h2>
-            <p class="float-left">Summarized definition of any concept or topic</p>
-            <div class="float-left">
-                <img src="images/site-info/compact-definitions.png">
+            <div class="site-info-text-div left">
+                <div class="center-align">
+                    <h2 class="subtitle">Compact Definitions</h2>
+                    <p>Summarized definition of any concept or topic</p>
+                </div>
+            </div>
+            <div class="site-info-image-div right">
+                <div class="center-align">
+                    <img src="images/site-info/compact-definitions.png">
+                </div>
             </div>
         </div>
         <div class="site-info-div">
-            <h2 class="subtitle float-right">Filter Results</h2>
-            <p class="float-right">Find any definition or concept containing the filtered keyword</p>
-            <div class="float-right">
-                <img src="images/site-info/filter-results.png">
+            <div class="site-info-image-div left">
+                <div class="center-align">
+                    <img src="images/site-info/filter-results.png">
+                </div>
             </div>
+            <div class="site-info-text-div right">
+                <div class="center-align">
+                    <h2 class="subtitle">Filter Results</h2>
+                    <p> Find any definition or concept containing the filtered keyword</p>
+                </div>
+            </div>
+            
         </div>
-    </div>
-    <div id="go-to-definitions-button" data-aos="fade">
-        <a href="definitions.html", role="button">Go To Definitions</a>
+        <div id="go-to-definitions-button">
+            <a href="definitions.html", role="button">Go To Definitions</a>
+        </div>
     </div>
     <div class="main-content" data-aos="fade-up">
         <h2 class="subtitle">What's this for?</h2>

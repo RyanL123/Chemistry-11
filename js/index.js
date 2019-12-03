@@ -3,7 +3,7 @@
 //        if ($(this).scrollTop() > 300) {
 //           $('body').addClass('changeColor')
 //        }
-//        if ($(this).scrollTop() < 300) {
+//        if ($(this).scrollTop() < 300 || $(this).scrollTop()> 1000) {
 //           $('body').removeClass('changeColor')
 //        }
 //     });
@@ -26,3 +26,23 @@
 //     navbar.classList.remove("sticky");
 //   }
 // }
+
+function smoothScroll(){
+    window.scroll({
+        top: 2500, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+      
+      // Scroll certain amounts from current position 
+      window.scrollBy({ 
+        top: 100, // could be negative value
+        left: 0, 
+        behavior: 'smooth' 
+      });
+      
+      // Scroll to a certain element
+      document.querySelector('#site-info').scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+}
