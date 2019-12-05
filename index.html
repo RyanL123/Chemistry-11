@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153551737-1"></script>
+    
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -10,8 +17,9 @@
 
         gtag('config', 'UA-153551737-1');
     </script>
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <!-- <script src="js/index.js"></script> -->
+    <script src="js/index.js"></script>
     <title>Chemistry 11</title>
     <link rel="stylesheet", type="text/css", href="css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,44 +34,43 @@
             <a href="polyatomic.html">Polyatomic Ions</a>
         </nav>
     </div>
-    <div class="title" data-aos="fade-down">
-        <h1 id="main-title">Chemistry 11</h1>
+    <div id="main-title" data-aos="fade-down">
+        <h1 class="title">Chemistry 11</h1>
         <h3>Simple. Compact. Minimal.</h3>
         <div id="down-arrow">
             <img onclick="smoothScroll()" src="images/down-arrow.png" width=50>
         </div>
     </div>
-    <div id="site-info">
-        <div class="site-info-div">
-            <div class="site-info-text-div left">
+    <div id="site-features">
+        <div class="site-features-div-top">
+            <div class="site-features-text-div left">
                 <div class="center-align">
                     <h2 class="subtitle">Compact Definitions</h2>
                     <p>Summarized definition of any concept or topic</p>
                 </div>
             </div>
-            <div class="site-info-image-div right">
+            <div class="site-features-image-div right">
                 <div class="center-align">
                     <img src="images/site-info/compact-definitions.png">
                 </div>
             </div>
         </div>
-        <div class="site-info-div">
-            <div class="site-info-image-div left">
+        <div class="site-features-div-bottom">
+            <div class="site-features-image-div left">
                 <div class="center-align">
                     <img src="images/site-info/filter-results.png">
                 </div>
             </div>
-            <div class="site-info-text-div right">
+            <div class="site-features-text-div right">
                 <div class="center-align">
                     <h2 class="subtitle">Filter Results</h2>
                     <p> Find any definition or concept containing the filtered keyword</p>
                 </div>
             </div>
-            
         </div>
-        <div id="go-to-definitions-button">
+        <!-- <div id="go-to-definitions-button">
             <a href="definitions.html", role="button">Go To Definitions</a>
-        </div>
+        </div> -->
     </div>
     <div class="main-content" data-aos="fade-up">
         <h2 class="subtitle">What's this for?</h2>
@@ -74,35 +81,11 @@
         </p>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/index.js"></script>
     <script>
         AOS.init({
             once: true,
             offset: 300
         });
-    </script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
-
-    <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyD-KQ_P6gYE7ZVr2NyojK70iWXs8lhXwzc",
-        authDomain: "chemistry-11.firebaseapp.com",
-        databaseURL: "https://chemistry-11.firebaseio.com",
-        projectId: "chemistry-11",
-        storageBucket: "chemistry-11.appspot.com",
-        messagingSenderId: "222625517349",
-        appId: "1:222625517349:web:2327d988486124b17754cc",
-        measurementId: "G-V7X7633VQ3"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
     </script>
 <footer>
     <a href="https://github.com/RyanL123"><img src="images/logos/GitHubLogo.png" title="GitHub" height=32px width=32px></a>
