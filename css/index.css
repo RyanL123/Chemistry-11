@@ -94,17 +94,27 @@ body {
     background: #333;
  }
 
-.title {
+#main-title {
     font-family: SFProDisplayRegular;
     text-align: center;
     font-size: 50px;
-    color: #333;
+    margin-top: 5%;
 }
 
-.title h3 {
+#main-title h3 {
     margin-top: 0;
     font-size: 30px;
     font-family: SFProDisplayRegular;
+}
+.title {
+    font-family: SFProDisplayRegular;
+    margin-bottom: 0;
+    background-color: #08AEEA;
+    background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
+    background-position: center center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .subtitle {
@@ -128,17 +138,11 @@ body {
 }
 
 #main-title {
-    padding-top: 5%;
-    margin-bottom: 0;
-    background-color: #08AEEA;
-    background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
-    background-position: center center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    font-family: SFProDisplayRegular;
 }
 
 .main-content {
+    margin: 5% 0%;
     font-family: SFProDisplayLight;
     text-align: justify;
     padding: 0% 15%;
@@ -194,32 +198,53 @@ body {
     animation: pulse 2s 3s ease-out infinite;
 }
 
-#site-info {
-    margin-bottom: 10%;
+#site-features {
     margin-top: 10%;
+    /* background-color: #01234f; */
     background-color: #333;
 }
 
-.site-info-div {
+.site-features-div-top {
     display: flex;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-#site-info img {
+.site-features-div-bottom {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+#site-features img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow:
+
+    0px 4.19623px 4.19623px rgba(0, 0, 0, 0.1),
+
+    0px 8.39245px 8.39245px rgba(0, 0, 0, 0.1),
+
+    0px 16.7849px 16.7849px rgba(0, 0, 0, 0.1),
+
+    0px 33.5698px 33.5698px rgba(0, 0, 0, 0.1),
+
+    0px 67.1396px 67.1396px rgba(0, 0, 0, 0.1),
+
+    0px 134.279px 134.279px rgba(0, 0, 0, 0.1),
+
+    0px 268.558px 262.264px rgba(0, 0, 0, 0.1); */
     border-radius: 20px;
     vertical-align: middle;
 }
 
-.site-info-div p {
+#site-features p {
     font-family: SFProDisplayLight;
     color: white;
     font-size: 25px;
     margin: 0;
 }
 
-.site-info-div .subtitle {
+#site-features .subtitle {
     margin: 0;
     background-color: #08AEEA;
     background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
@@ -229,12 +254,12 @@ body {
     color: transparent;
 }
 
-.site-info-text-div {
+.site-features-text-div {
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.site-info-image-div{
+.site-features-image-div{
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -307,13 +332,16 @@ body {
 }
 
 #definition-title {
-    padding-top: 5%;
-    background-image: url("../images/backgrounds/iOS-Gradient-Blue.jpeg");
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* background-image: url("../images/backgrounds/iOS-Gradient-Blue.jpeg");
     background-position: center center;
     background-size: 200%;
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 #periodictable {
@@ -326,9 +354,15 @@ body {
     animation: fadein 1s;
 }
 
+#polyatomic-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .polyatomic-table {
     font-family: SFProDisplayLight;
-    padding-top: 5%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
@@ -358,11 +392,7 @@ body {
 
 footer {
     text-align: center;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    
+    margin: 5% 10%;
 }
 
 footer a {

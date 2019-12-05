@@ -9,40 +9,43 @@
 //     });
 //  });
 
-// // When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
 
-// // Get the navbar
-// var navbar = document.getElementById("navbar");
+// Firebase config
+var config = {
+  apiKey: "AIzaSyD-KQ_P6gYE7ZVr2NyojK70iWXs8lhXwzc",
+  authDomain: "chemistry-11.firebaseapp.com",
+  databaseURL: "https://chemistry-11.firebaseio.com",
+  projectId: "chemistry-11",
+  storageBucket: "chemistry-11.appspot.com",
+  messagingSenderId: "222625517349",
+  appId: "1:222625517349:web:2327d988486124b17754cc",
+  measurementId: "G-V7X7633VQ3"
+};
+firebase.initializeApp(config);
+firebase.analytics();
 
-// // Get the offset position of the navbar
-// var sticky = navbar.offsetTop;
+// Get a reference to the database service
+var database = firebase.database();
+var ref = database.ref("feedback");
 
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
 
+// Smooth scrolling
 function smoothScroll(){
-    window.scroll({
-        top: 2500, 
-        left: 0, 
-        behavior: 'smooth'
-      });
-      
-      // Scroll certain amounts from current position 
-      window.scrollBy({ 
-        top: 100, // could be negative value
-        left: 0, 
-        behavior: 'smooth' 
-      });
-      
-      // Scroll to a certain element
-      document.querySelector('#site-info').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+  window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+    
+  // Scroll certain amounts from current position 
+  window.scrollBy({ 
+    top: 100, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
+    
+  // Scroll to a certain element
+  document.querySelector('#site-features').scrollIntoView({ 
+    behavior: 'smooth' 
+  });
 }
