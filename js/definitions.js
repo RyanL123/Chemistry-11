@@ -304,6 +304,16 @@ var definitions = {
             Term: "Dilution",
             Definition: "Process of reducing the concentration of a solution; usually done by adding more solvent",
             Link: "https://en.wikipedia.org/wiki/Dilution_(equation)"
+        },
+        {
+            Term: "Spectator Ions",
+            Definition: "Ions that are not involved in a chemical reaction",
+            Link: "https://en.wikipedia.org/wiki/Spectator_ion"
+        },
+        {
+            Term: "Net Ionic Equation",
+            Definition: "Chemical equation that includes only the entities that react during the reaction",
+            Link: "https://en.wikipedia.org/wiki/Chemical_equation#Ionic_equations"
         }
     ]
 }

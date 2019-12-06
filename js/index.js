@@ -24,11 +24,6 @@ var config = {
 firebase.initializeApp(config);
 firebase.analytics();
 
-// Get a reference to the database service
-var database = firebase.database();
-var ref = database.ref("feedback");
-
-
 // Smooth scrolling
 function smoothScroll(){
   window.scroll({

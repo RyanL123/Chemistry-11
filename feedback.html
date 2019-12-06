@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+
+    <script src="js/feedback.js"></script>
+    <title>Chemistry 11</title>
+    <link rel="stylesheet", type="text/css", href="css/index.css">
+    <link rel="shortcut icon" href="./images/logos/favicon.png">
+</head>
+<body>
+    <div class="navbar sticky">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="definitions.html">Definitions</a>
+            <a href="periodictable.html">Periodic Table</a>
+            <a href="polyatomic.html">Polyatomic Ions</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </div>
+    <div id="feedback-explanation-div">
+        <p>If there are any bugs, missing definitions or if you have any suggestions 
+            for the site, feel free to use the form below to submit feedback.
+        </p>
+    </div>
+    <div id="feedback-div">
+        <form>
+            <select id="feedback-type">
+                <option>Bug</option>
+                <option>Missing Definitions</option>
+                <option>Suggestion</option>
+                <option>Other</option>
+            </select>
+            <br>
+            <textarea type="text" id="feedback-text" placeholder="Briefly describe the problem"></textarea>
+            <br>
+            <input type="submit" id="feedback-submit" onclick=submitFeedback()>
+        </form>
+    </div>
+</body>
+</html>
