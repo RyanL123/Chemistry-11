@@ -57,6 +57,10 @@
     }
 }
 
+.changeColor {
+    background-color: #333;
+}
+
 .navbar {
     text-align: center;
     padding : 1% 0%;
@@ -110,7 +114,7 @@ body {
     font-family: SFProDisplayRegular;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
+    background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
     background-position: center center;
     background-clip: text;
     -webkit-background-clip: text;
@@ -139,25 +143,35 @@ body {
 
 #main-content {
     margin: 5% 0%;
-    font-family: SFProDisplayLight;
+    font-family: SFProDisplayRegular;
     text-align: justify;
-    padding: 0% 15%;
+    padding: 0% 2.5%;
     font-size: 20px;
 }
 
 #main-content p{
-    padding-bottom: 3%;
     font-size: 25px;
+    text-align: justify;
 }
 
 #main-content h2 {
     text-align: center;
     background-color: #08AEEA;
-    background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
+    background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
     background-position: center center;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.main-content-info-div {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.main-content-info {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #go-to-definitions-button a {
@@ -198,10 +212,6 @@ body {
     animation: pulse 2s 3s ease-out infinite;
 }
 
-#site-features {
-    background-color: #1e2c57;
-}
-
 .site-features-div-top {
     display: flex;
     padding-top: 5%;
@@ -213,31 +223,20 @@ body {
     padding-bottom: 5%;
 }
 
+#site-features {
+    background-color: #f2f2f2;
+    margin: 0% 2%;
+}
+
 #site-features img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* box-shadow:
-
-    0px 4.19623px 4.19623px rgba(0, 0, 0, 0.1),
-
-    0px 8.39245px 8.39245px rgba(0, 0, 0, 0.1),
-
-    0px 16.7849px 16.7849px rgba(0, 0, 0, 0.1),
-
-    0px 33.5698px 33.5698px rgba(0, 0, 0, 0.1),
-
-    0px 67.1396px 67.1396px rgba(0, 0, 0, 0.1),
-
-    0px 134.279px 134.279px rgba(0, 0, 0, 0.1),
-
-    0px 268.558px 262.264px rgba(0, 0, 0, 0.1); */
     border-radius: 20px;
     vertical-align: middle;
 }
 
 #site-features p {
-    font-family: SFProDisplayLight;
-    color: white;
+    font-family: SFProDisplayRegular;
     font-size: 25px;
     margin: 0;
 }
@@ -245,7 +244,8 @@ body {
 #site-features .subtitle {
     margin: 0;
     background-color: #08AEEA;
-    background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%);
+    /* background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%); */
+    background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
     background-position: center center;
     background-clip: text;
     -webkit-background-clip: text;
@@ -263,11 +263,12 @@ body {
 }
 
 .center-align {
+    margin: 0;
+    padding: 0;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
-
 
 #filter-div {
     text-align: center;
@@ -332,12 +333,12 @@ body {
 #definition-title {
     text-align: center;
     font-size: 50px;
-    margin-top: 5%;
+    margin-top: 100px;
     margin-bottom: 5%;
 }
 
 #periodictable {
-    padding-top: 3%;
+    margin-top: 100px;
     width: 100%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -349,7 +350,7 @@ body {
 #polyatomic-title {
     text-align: center;
     font-size: 50px;
-    margin-top: 5%;
+    margin-top: 100px;
     margin-bottom: 5%;
 }
 
@@ -384,7 +385,8 @@ body {
 
 #feedback-explanation-div {
     text-align: center;
-    margin: 5% 15%;
+    margin: 0 15%;
+    margin-bottom: 5%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
@@ -404,6 +406,13 @@ body {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
+}
+
+#feedback-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 5%;
 }
 
 #feedback-icon {
@@ -454,11 +463,11 @@ body {
     background: #0071e3;
     padding: 8px 16px;
     color: #fff;
-    border-color: #333;
     text-align: center;
     font-family: SFProDisplayLight;
     font-size: 20px;
     outline: none;
+    border: none;
     cursor: pointer;
 }
 

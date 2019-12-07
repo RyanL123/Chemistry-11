@@ -1,9 +1,13 @@
 // $(function() {
+//   var siteFeaturesDistance = $("#site-features").offset().top-100,
+//   $window = $(window)
+//   var mainContentDistance = $("#main-content").offset().top-100,
+//   $window = $(window)
 //     $(window).scroll(function () {
-//        if ($(this).scrollTop() > 300) {
+//        if ($(this).scrollTop() > siteFeaturesDistance) {
 //           $('body').addClass('changeColor')
 //        }
-//        if ($(this).scrollTop() < 300 || $(this).scrollTop()> 1000) {
+//        if ($(this).scrollTop() < siteFeaturesDistance || $(this).scrollTop() >= mainContentDistance) {
 //           $('body').removeClass('changeColor')
 //        }
 //     });
@@ -40,7 +44,9 @@ function smoothScroll(){
   });
     
   // Scroll to a certain element
-  document.querySelector('#site-features').scrollIntoView({ 
-    behavior: 'smooth' 
+  document.getElementById('site-features').scrollIntoView({ 
+    behavior: 'smooth',
+    block: "center",
+    inline: "center"
   });
 }
