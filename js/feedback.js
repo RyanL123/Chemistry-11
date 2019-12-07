@@ -17,6 +17,12 @@ var database = firebase.database();
 function submitFeedback(){
     // get feedback type and text
     let message = document.getElementById("feedback-text").value;
+
+    // user cannot submit blank text
+    if (message == ""){
+        alert("Message cannot be blank");
+        return;
+    }
     let selector = document.getElementById("feedback-type");
     let selectedValue = selector.options[selector.selectedIndex].text;
     let ref = database.ref(selectedValue);
@@ -26,6 +32,9 @@ function submitFeedback(){
     let dd = today.getDate();
     let mm = today.getMonth() + 1; //January is 0
     let yyyy = today.getFullYear();
+    let hour = today.getHours();
+    let minute = today.getMinutes();
+    let second = today.getSeconds();
     if (dd < 10) {
         dd = '0' + dd;
     } 
@@ -37,6 +46,7 @@ function submitFeedback(){
     // create feedback message with time and push to database
     let feedback = {
         text: message,
+        time: hour + "h " + minute + "m " + second + "s",
         date: today
     }
     ref.push(feedback);

@@ -21,25 +21,32 @@
             <a href="feedback.html">Feedback</a>
         </nav>
     </div>
-    <div id="feedback-explanation-div">
+    <div id="feedback-title">
+        <h1 class="title" >Feedback</h1>
+    </div>
+    <!-- <div id="feedback-explanation-div">
         <p>If there are any bugs, missing definitions or if you have any suggestions 
             for the site, feel free to use the form below to submit feedback.
         </p>
-    </div>
+    </div> -->
     <div id="feedback-div">
         <form>
             <select id="feedback-type">
-                <option selected hidden>Feedback Type</option>
                 <option>Bug</option>
                 <option>Missing Definition</option>
                 <option>Suggestion</option>
                 <option>Other</option>
             </select>
             <br>
-            <textarea type="text" id="feedback-text" placeholder="Briefly describe the problem"></textarea>
+            <textarea type="text" id="feedback-text" placeholder="Describe the problem and try to be as specific as possible"></textarea>
             <br>
-            <input type="submit" id="feedback-submit" onclick=submitFeedback()>
+            <button type="submit" id="feedback-submit" onclick=submitFeedback()>Submit</button>
         </form>
     </div>
+    <footer>
+        <a href="https://github.com/RyanL123" target="_blank"><img src="../images/logos/GitHubLogo.png" title="GitHub" height=32px width=32px></a>
+        <a href="https://www.instagram.com/ryan.lllllll/" target="_blank"><img src="../images/logos/InstagramLogo.png" title="Instagram" height=32px width=32px></a>
+        <a href="https://discordapp.com/users/231592825349734402" target="_blank"><img src="../images/logos/DiscordLogo.png" title="Discord" height=32px width=32px></a>
+    </footer>
 </body>
 </html>
