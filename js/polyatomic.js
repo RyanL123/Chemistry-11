@@ -1,4 +1,4 @@
-// parses definitions.json into polyatomicIons variable
+// parses polyatomic.json into polyatomicIons variable
 let url = "../JSON/polyatomic.json"
 var xhr = new XMLHttpRequest();
 xhr.open("GET",url, true);
@@ -6,7 +6,7 @@ xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
         var polyatomicIons = JSON.parse(xhr.responseText);
 
-        // For some reason definitons cannot be modified on the global scope,
+        // For some reason polyatomics cannot be modified on the global scope,
         // so everything has to be done within the same scope as JSON.parse request
         // Sort array elements lexicographically by their name
         polyatomicIons.ions.sort(

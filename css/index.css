@@ -124,7 +124,12 @@ body {
 .subtitle {
     font-family: SFProDisplayBold;
     font-size: 50px;
-    color: #333;
+    background-color: #08AEEA;
+    background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
+    background-position: center center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .left {
@@ -469,6 +474,46 @@ body {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+
+#contributors h2 {
+    text-align: center;
+
+}
+
+#contributors {
+    text-align: center;
+}
+
+#contributors h2 {
+    margin: 0;
+}
+
+#contributors p {
+    font-family: SFProDisplayRegular;
+    margin: 0;
+}
+
+.contributors-sub-div {
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+}
+
+.contributors-sub-div a {
+    text-decoration: none;
+}
+
+.contributors-img-div img{ 
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.contributor-name {
+    font-family: SFProDisplayRegular;
+    /* font-size: 10px; */
+    font-size: 1.5em;
 }
 
 footer {
