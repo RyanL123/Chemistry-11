@@ -319,6 +319,36 @@
             "Term": "Dissociation Equation",
             "Definition": "Chemical reaction in which a compound breaks apart into two or more components",
             "Link": "https://en.wikipedia.org/wiki/Dissociation_(chemistry)"
+        },
+        {
+            "Term": "Aliquot",
+            "Definition": "Small speicifed amount of solution",
+            "Link": "https://en.wikipedia.org/wiki/Sample_(material)"
+        },
+        {
+            "Term": "Hygroscopic",
+            "Definition": "Substance that absorbs water in variable amounts",
+            "Link": "https://en.wikipedia.org/wiki/Hygroscopy"
+        },
+        {
+            "Term": "Titration",
+            "Definition": "Quantitative chemical analysis to determine the concentration of an identified analyte",
+            "Link": "https://simple.wikipedia.org/wiki/Titration"
+        },
+        {
+            "Term": "Endpoint",
+            "Definition": "Point right pass the equivalence point; Where the indicator changes color",
+            "Link": "https://en.wikipedia.org/wiki/Equivalence_point"
+        },
+        {
+            "Term": "Equivalence Point",
+            "Definition": "Perfect stochiometric amounts where the acid and base have neutralized each other",
+            "Link": "https://en.wikipedia.org/wiki/Equivalence_point"
+        },
+        {
+            "Term": "Indicator",
+            "Definition": "Substance that changes color depending on the pH of the substance it reacts with",
+            "Link": "https://simple.wikipedia.org/wiki/PH#pH_indicators"
         }
     ]
 }
