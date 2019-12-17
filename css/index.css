@@ -77,11 +77,11 @@
     to {bottom: 0; opacity: 0;}
 }
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
     .navbar a {
         display: inline-block;
     }
-}
+} */
 
 .hover-underline-animation {
     display: inline-block;
