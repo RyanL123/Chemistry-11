@@ -50,4 +50,8 @@ function filter(){
             definitions[i].style.display = "";
         }
     }
+
+    // var t = "definitions-div".textContent || "definitions-div".innerTExt;
+    // container.innerHTML = container.value ? t.replace(new RegExp('('+conatiner.value+')','ig'),
+    // '<span class=\"highlight\">$1</span>') : t;
 }
