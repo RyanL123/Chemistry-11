@@ -5,7 +5,7 @@
 
 @font-face {
     src: url("../fonts/SF-Pro-Display-Bold.otf");
-    font-family: SFProDisplayBold; 
+    font-family: SFProDisplayBold;
 }
 
 @font-face {
@@ -57,6 +57,8 @@
     }
 }
 
+
+
 .changeColor {
     background-color: #333;
 }
@@ -64,8 +66,14 @@
 .navbar {
     text-align: center;
     z-index: 10;
-    padding: 1% 0%;
+    padding: 15px 0%;
     background-color: #333;
+}
+
+@media screen and (max-width: 800px){
+    .navbar a {
+        display: inline-block;
+    }
 }
 
 .navbar a {
@@ -125,12 +133,6 @@ body {
     font-family: SFProDisplayBold;
     font-size: 50px;
     color: #185a9d;
-    /* background-color: #08AEEA;
-    background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
-    background-position: center center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
 }
 
 .left {
@@ -158,27 +160,27 @@ body {
 #main-content p{
     letter-spacing: 0.05em;
     font-family: SFProDisplayLight;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
     color: #696969;
     margin-top: 1%;
 }
 
+#main-content a {
+    text-decoration: none;
+    color: #185a9d;
+    font-weight: bold;
+}
+
 #main-content h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 0;
     color: #185a9d;
-    /* background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%); */
-    /* background-position: center center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
 }
 
 .main-content-info-div {
     display: flex;
-    /* padding-bottom: 5%; */
 }
 
 .main-content-info {
@@ -256,12 +258,6 @@ body {
 #site-features .subtitle {
     margin: 0;
     color: #185a9d;
-    /* background-image: linear-gradient(147deg, #08AEEA 0%, #2AF598 100%); */
-    /* background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
-    background-position: center center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent; */
 }
 
 .site-features-text-div {
@@ -299,6 +295,10 @@ body {
     border-color: #333;
     font-family: SFProDisplayLight;
     outline: none;
+}
+
+.highlight {
+    color: blue;
 }
 
 .definitions h2 {
@@ -519,11 +519,13 @@ body {
 
 .contributors-sub-div a {
     text-decoration: none;
+    color: #333;
 }
 
 .contributors-img-div img{ 
     width: 10vw;
     border-radius: 50%;
+    border-color: #185a9d;
 }
 
 .contributor-name {
