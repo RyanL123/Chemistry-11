@@ -20,7 +20,10 @@ function submitFeedback(){
 
     // user cannot submit blank text
     if (message == ""){
-        alert("Message cannot be blank");
+        document.getElementById("snackbar-fail").className = "show";
+        setTimeout(function(){
+            document.getElementById("snackbar-fail").className = document.getElementById("snackbar-fail").className.replace("show", ""); 
+        }, 3000);
         return;
     }
     let selector = document.getElementById("feedback-type");
@@ -50,5 +53,10 @@ function submitFeedback(){
         date: today
     }
     ref.push(feedback);
-    alert("Your feedback has been recorded");
+    document.getElementById("snackbar-success").className = "show";
+    setTimeout(function(){
+        document.getElementById("snackbar-success").className = document.getElementById("snackbar-success").className.replace("show", ""); 
+    }, 3000);
+    document.getElementById("feedback-type").selectedIndex = 0;
+    document.getElementById("feedback-text").value = "";
 }
