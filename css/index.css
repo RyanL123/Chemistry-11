@@ -170,6 +170,10 @@
 
 .navbar button {
     vertical-align: middle;
+    
+}
+
+button {
     border-radius: 10px;
     padding: 8px 16px;
     color: #1b6bf5;
@@ -178,13 +182,14 @@
     font-size: 20px;
     outline: none;
     border: 1px solid #1b6bf5;
+    background-color: white;
     cursor: pointer;
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
 }
 
-.navbar button:hover{
+button:hover {
     background: #1b6bf5;
     color: white;
     -webkit-transition: background-color 200ms linear;
@@ -296,31 +301,6 @@ body {
     padding-right: 5%;
 }
 
-#go-to-definitions-button a {
-    border-radius: 18px;
-    background: #0071e3;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: #fff;
-    text-decoration: none;
-}
-
-#go-to-definitions-button a:hover {
-    background: #4297ed;
-    -webkit-transition: background-color 100ms linear;
-    -ms-transition: background-color 100ms linear;
-    transition: background-color 100ms linear;
-}
-
-#go-to-definitions-button {
-    text-align: center;
-    font-family: SFProDisplayLight;
-    font-size: 20px;
-    padding: 10% 0%;
-}
-
 #down-arrow {
     margin-top: 50px;
     text-align: center;
@@ -418,7 +398,7 @@ body {
     color: blue;
 }
 
-.definitions h2 {
+/* .definitions h2 {
     font-family: SFProDisplayBold;
     text-align: left;
     font-size: 40px;
@@ -427,14 +407,14 @@ body {
     padding-right: 2%;
     margin-bottom: 0px;
     margin-top: 3%;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
     animation: fadein 1s;
-}
+} */
 
-.definitions a {
+/* .definitions a {
     text-decoration: none;
     color: #333;
 }
@@ -444,20 +424,20 @@ body {
     -webkit-transition: color 100ms linear;
     -ms-transition: color 100ms linear;
     transition: color 100ms linear;
-}
+} */
 
-.definitions p {
+/* .definitions p {
     font-family: SFProDisplayLight;
     padding-left: 2%;
     padding-right: 2%;
     font-size: 30px;
     margin-top: 0px;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-    -o-animation: fadein 1s; /* Opera < 12.1 */
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -ms-animation: fadein 1s;
+    -o-animation: fadein 1s;
     animation: fadein 1s;
-}
+} */
 
 #definition-title {
     text-align: center;
@@ -681,23 +661,36 @@ body {
     font-size: 1.5em;
 }
 
+#definitions-cards-container {
+    margin: 0% 10%;
+    margin-top: 50px;
+}
+
 #solubility-cards-container {
     margin: 0% 10%;
     margin-top: 100px;
 }
 
-.solubility-card .subtitle {
+.card .subtitle {
     font-size: 30px;
 }
 
-.solubility-card h3 {
+.card a {
+    text-decoration: none;
+    color:rgb(15, 50, 86);
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+}
+
+.card h3 {
     font-family: SFProDisplayLight;
     font-size: 20px;
     color: #696969;
+    margin-bottom: 0;
 }
 
-
-.solubility-card {
+.card {
     margin-top: 2%;
     border-radius: 10px;
     border: 1px solid lightgray;
@@ -705,13 +698,25 @@ body {
     -webkit-transition: border-color 200ms linear;
     -ms-transition: border-color 200ms linear;
     transition: border-color 200ms linear;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
 }
 
-.solubility-card:hover {
+.card:hover {
     border: 1px solid #1b6bf5;
     -webkit-transition: border-color 200ms linear;
     -ms-transition: border-color 200ms linear;
     transition: border-color 200ms linear;
+}
+
+.card a:hover {
+    color: #1b6bf5;
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
 }
 
 #snackbar-success {
