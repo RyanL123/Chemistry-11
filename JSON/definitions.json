@@ -349,6 +349,31 @@
             "Term": "Indicator",
             "Definition": "Substance that changes color depending on the pH of the substance it reacts with",
             "Link": "https://simple.wikipedia.org/wiki/PH#pH_indicators"
+        },
+        {
+            "Term": "Gravimetric Analysis",
+            "Definition": "Precipitation reaction used to quantify a substance based on mass",
+            "Link": "https://en.wikipedia.org/wiki/Gravimetric_analysis"
+        },
+        {
+            "Term": "Volumetric Analysis",
+            "Definition": "Adding a known volume of solution with known concentration to a known volume of unknown concentration (analyte)",
+            "Link": "https://en.wikipedia.org/wiki/Titration"
+        },
+        {
+            "Term": "Arrhenius Theory",
+            "Definition": "An acid is defined as any substance that dissociates in water to produce H+ ions, and a base is any substance that dissociates in water to produce OH- ions.",
+            "Link": ""
+        },
+        {
+            "Term": "Bronsted-Lowry Theory:",
+            "Definition": "An acid as a substance that donates a proton (H+), and a base that accepts a proton (H+).",
+            "Link": "https://en.wikipedia.org/wiki/Br%C3%B8nsted%E2%80%93Lowry_acid%E2%80%93base_theory"
+        },
+        {
+            "Term": "Conjugate Acid",
+            "Definition": "A chemical compound formed by the reception of a proton (H+) by a base",
+            "Link": "https://en.wikipedia.org/wiki/Conjugate_acid"
         }
     ]
 }

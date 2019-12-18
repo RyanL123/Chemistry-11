@@ -83,6 +83,26 @@
     }
 } */
 
+.selected-tab {
+    display: inline-block;
+    position: relative;
+    color: #1b6bf5;
+}
+
+.selected-tab::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1b6bf5;
+    transform-origin: bottom right;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;
@@ -126,12 +146,12 @@
     font-family: SFProDisplayLight;
 }
 
-
 .navbar a {
+    background-color: white;
     vertical-align: middle;
     display: inline-block;
     text-decoration: none;
-    margin: 0% 3%;
+    margin: 0% 2%;
     font-weight: 900;
     color: #333;
     font-family: SFProDisplayLight;
@@ -219,6 +239,7 @@ body {
     font-family: SFProDisplayBold;
     font-size: 50px;
     color: rgb(15, 50, 86);
+    margin: 0;
 }
 
 .left {
@@ -642,12 +663,55 @@ body {
 .contributors-img-div img{ 
     width: 10vw;
     border-radius: 50%;
+    -webkit-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+}
+
+.contributors-img-div img:hover{
+    opacity: 0.8;
+    -webkit-transition: opacity 200ms linear;
+    -ms-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
 }
 
 .contributor-name {
     font-family: SFProDisplayRegular;
     /* font-size: 10px; */
     font-size: 1.5em;
+}
+
+#solubility-cards-container {
+    margin: 0% 10%;
+    margin-top: 100px;
+}
+
+.solubility-card .subtitle {
+    font-size: 30px;
+}
+
+.solubility-card h3 {
+    font-family: SFProDisplayLight;
+    font-size: 20px;
+    color: #696969;
+}
+
+
+.solubility-card {
+    margin-top: 2%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 18px;
+    -webkit-transition: border-color 200ms linear;
+    -ms-transition: border-color 200ms linear;
+    transition: border-color 200ms linear;
+}
+
+.solubility-card:hover {
+    border: 1px solid #1b6bf5;
+    -webkit-transition: border-color 200ms linear;
+    -ms-transition: border-color 200ms linear;
+    transition: border-color 200ms linear;
 }
 
 #snackbar-success {
