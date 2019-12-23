@@ -1,16 +1,16 @@
 @font-face {
-    src: url("../fonts/SF-Pro-Display-Light.otf");
-    font-family: SFProDisplayLight;
+    src: url("../fonts/Oxygen-Light.ttf");
+    font-family: OxyLight;
 }
 
 @font-face {
-    src: url("../fonts/SF-Pro-Display-Bold.otf");
-    font-family: SFProDisplayBold;
+    src: url("../fonts/Oxygen-Bold.ttf");
+    font-family: OxyBold;
 }
 
 @font-face {
-    src: url("../fonts/SF-Pro-Display-Regular.otf");
-    font-family: SFProDisplayRegular;
+    src: url("../fonts/Oxygen-Regular.ttf");
+    font-family: OxyReg;
 }
 
 @keyframes fadein {
@@ -77,11 +77,12 @@
     to {bottom: 0; opacity: 0;}
 }
 
-/* @media screen and (max-width: 800px){
-    .navbar a {
-        display: inline-block;
+@media screen and (max-width: 800px){
+    .flex-box{
+        flex-direction: column;
+        margin: 0% 5%;
     }
-} */
+}
 
 .selected-tab {
     display: inline-block;
@@ -137,13 +138,11 @@
     padding: 10px 0%;
     background-color: white;
     border-bottom: 1px lightgray solid;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
-
 
 ::placeholder {
     color: #333;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
 }
 
 .navbar a {
@@ -154,7 +153,7 @@
     margin: 0% 2%;
     font-weight: 900;
     color: #333;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 20px;
     -webkit-transition: color 200ms linear;
     -ms-transition: color 200ms linear;
@@ -168,17 +167,12 @@
     transition: color 200ms linear;
 }
 
-.navbar button {
-    vertical-align: middle;
-    
-}
-
 button {
     border-radius: 10px;
     padding: 8px 16px;
     color: #1b6bf5;
     text-align: center;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 20px;
     outline: none;
     border: 1px solid #1b6bf5;
@@ -212,13 +206,17 @@ button:hover {
     width: 100%;
 }
 
+.flex-box {
+    display: flex;
+}
+
 body {
     margin: 0;
     transition: 0.3s all;
 }
 
 #main-title {
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     text-align: center;
     font-size: 50px;
     height: 100vh;
@@ -227,10 +225,10 @@ body {
 #main-title h3 {
     margin-top: 0;
     font-size: 30px;
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
 }
 .title {
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     margin-top: 0;
     margin-bottom: 0;
     background-image: linear-gradient(147deg, #185a9d 35%, #43cea2 75%);
@@ -241,38 +239,33 @@ body {
 }
 
 .subtitle {
-    font-family: SFProDisplayBold;
+    font-family: OxyBold;
     font-size: 50px;
     color: rgb(15, 50, 86);
     margin: 0;
 }
 
-.left {
-    display: block;
-    float: left;
+.text-left {
     text-align: left;
-    width: 50%;
 }
 
-.right {
-    display: block;
-    float: right;
+.text-right {
     text-align: right;
-    width: 50%;
 }
 
 #main-content {
     margin: 5% 0%;
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     text-align: left;
     padding: 0% 2.5%;
     font-size: 20px;
 }
 
+
 #main-content p{
     letter-spacing: 1px;
     line-height: 1.4em;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 18px;
     text-align: left;
     color: #696969;
@@ -292,13 +285,30 @@ body {
     color: rgb(15, 50, 86);
 }
 
-.main-content-info-div {
-    display: flex;
+.main-content-info-left {
+    margin-left: 5%;
+    margin-right: 2.5%;
+    width: 50%;
 }
 
-.main-content-info {
-    padding-left: 5%;
-    padding-right: 5%;
+.main-content-info-right {
+    margin-left: 2.5%;
+    margin-right: 5%;
+    width: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .main-content-info-div{
+        flex-direction: column;
+    }
+    .main-content-info-left{
+        width: 100%;
+        margin: 0;
+    }
+    .main-content-info-right{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 #down-arrow {
@@ -314,32 +324,26 @@ body {
     animation: pulse 2s 3s ease-out infinite;
 }
 
-.site-features-div-top {
-    display: flex;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.site-features-div-bottom {
-    display: flex;
-    padding-bottom: 5%;
-}
-
 #site-features {
     background-color: #f3f5f9;
+}
+
+#site-features .flex-box {
+    padding: 5% 0%;
 }
 
 #site-features img {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 20px;
+    border-radius: 10px;
     vertical-align: middle;
 }
 
 #site-features p {
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     font-size: 25px;
     margin: 0;
+    color: #696969;
 }
 
 #site-features .subtitle {
@@ -347,14 +351,22 @@ body {
     margin: 0;
 }
 
-.site-features-text-div {
-    padding-left: 5%;
-    padding-right: 5%;
+.site-features-info {
+    padding: 0% 5%;
+    width: 50%;
 }
 
-.site-features-image-div{
-    padding-left: 5%;
-    padding-right: 5%;
+@media screen and (max-width: 800px){
+    .site-features-div-top {
+        flex-direction: column;
+    }
+    .site-features-div-bottom {
+        flex-direction: column;
+    }
+    .site-features-info {
+        width: 100%;
+        padding: 3% 0;
+    }
 }
 
 .center-align {
@@ -380,7 +392,7 @@ body {
     border-radius: 16px;
     padding: 16px;
     border: 1px solid lightgray;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     outline: none;
     -webkit-transition: border 200ms linear;
     -ms-transition: border 200ms linear;
@@ -397,47 +409,6 @@ body {
 .highlight {
     color: blue;
 }
-
-/* .definitions h2 {
-    font-family: SFProDisplayBold;
-    text-align: left;
-    font-size: 40px;
-    color: #333;
-    padding-left: 2%;
-    padding-right: 2%;
-    margin-bottom: 0px;
-    margin-top: 3%;
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    -o-animation: fadein 1s;
-    animation: fadein 1s;
-} */
-
-/* .definitions a {
-    text-decoration: none;
-    color: #333;
-}
-
-.definitions a:hover {
-    color: #757575;
-    -webkit-transition: color 100ms linear;
-    -ms-transition: color 100ms linear;
-    transition: color 100ms linear;
-} */
-
-/* .definitions p {
-    font-family: SFProDisplayLight;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: 30px;
-    margin-top: 0px;
-    -webkit-animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -ms-animation: fadein 1s;
-    -o-animation: fadein 1s;
-    animation: fadein 1s;
-} */
 
 #definition-title {
     text-align: center;
@@ -464,7 +435,7 @@ body {
 }
 
 .polyatomic-table {
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
@@ -505,7 +476,7 @@ body {
 }
 
 #feedback-explanation-div p{
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     text-align: center;
     font-size: 24px;
 }
@@ -547,7 +518,7 @@ body {
 
 #feedback-type {
     width: 100%;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 20px;
     height: 50px;
     border-radius: 32px;
@@ -565,7 +536,7 @@ body {
     padding: 16px;
     border-radius: 16px;
     border: 1px solid lightgray;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     outline: none;
     -webkit-transition: border 200ms linear;
     -ms-transition: border 200ms linear;
@@ -587,7 +558,7 @@ body {
     color: #1b6bf5;
     border: 1px solid #1b6bf5;
     text-align: center;
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 20px;
     outline: none;
     cursor: pointer;
@@ -615,7 +586,7 @@ body {
 }
 
 #contributors p {
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     margin: 0;
 }
 
@@ -656,7 +627,7 @@ body {
 }
 
 .contributor-name {
-    font-family: SFProDisplayRegular;
+    font-family: OxyReg;
     /* font-size: 10px; */
     font-size: 1.5em;
 }
@@ -684,7 +655,7 @@ body {
 }
 
 .card h3 {
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     font-size: 20px;
     color: #696969;
     margin-bottom: 0;
@@ -732,7 +703,7 @@ body {
     z-index: 1; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* 30px from the bottom */
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     background:rgba(57,193,108,0.8);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -750,7 +721,7 @@ body {
     z-index: 1; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* 30px from the bottom */
-    font-family: SFProDisplayLight;
+    font-family: OxyLight;
     background:rgba(255,80,64,0.8);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -779,3 +750,4 @@ footer {
 footer a {
     margin: 5%;
 }
+

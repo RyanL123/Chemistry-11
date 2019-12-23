@@ -19,28 +19,28 @@
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c7434d4388.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/contributors.js"></script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chemistry 11</title>
+    <script src="js/responsiveNav.js"></script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet", type="text/css", href="css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/logos/favicon.png">
 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chemistry 11</title>
 </head>
 <body>
-    <div class="navbar sticky">
+    <div class="navbar sticky" id="navbar">
         <nav>
-            <a><img src="./images/logos/favicon.png"></a>
-            <a href="index.html" class="selected-tab">Home</a>
+            <a href="index.html"><img src="./images/logos/favicon.png"></a>
+            <a href="index.html" class="hover-underline-animation">Home</a>
             <a href="definitions.html" class="hover-underline-animation">Definitions</a>
-            <a href="periodictable.html" class="hover-underline-animation">Periodic Table</a>
+            <a href="periodictable.html" class="selected-tab">Periodic Table</a>
             <a href="polyatomic.html" class="hover-underline-animation">Polyatomic Ions</a>
             <a href="solubility.html" class="hover-underline-animation">Solubility Rules</a>
             <a href="feedback.html" id="right-align-button"><button>Feedback</button></a>
@@ -56,46 +56,43 @@
         </div>
     </div>
     <div id="site-features">
-        <div class="site-features-div-top">
-            <div class="site-features-text-div left">
-                <div class="center-align">
+        <div class="flex-box">
+            <div class="site-features-info">
+                <div>
                     <h2 class="subtitle">Compact Definitions</h2>
                     <p>Summarized definition of any concept or topic</p>
                 </div>
             </div>
-            <div class="site-features-image-div right">
-                <div class="center-align">
+            <div class="site-features-info">
+                <div>
                     <img src="images/site-info/compact-definitions.png">
                 </div>
             </div>
         </div>
-        <div class="site-features-div-bottom">
-            <div class="site-features-image-div left">
-                <div class="center-align">
+        <div class="flex-box">
+            <div class="site-features-info">
+                <div>
                     <img src="images/site-info/filter-results.png">
                 </div>
             </div>
-            <div class="site-features-text-div right">
-                <div class="center-align">
+            <div class="site-features-info text-right">
+                <div>
                     <h2 class="subtitle">Filter Results</h2>
                     <p> Find any definition or concept containing the filtered keyword</p>
                 </div>
             </div>
         </div>
-        <!-- <div id="go-to-definitions-button">
-            <a href="definitions.html", role="button">Go To Definitions</a>
-        </div> -->
     </div>
     <div id="main-content">
-        <div class="main-content-info-div">
-            <div class="main-content-info left">
+        <div class="flex-box">
+            <div class="main-content-info-left">
                 <h2 class="subtitle">What's this for?</h2>
                 <p> This website is intended to summarize all the Chemistry definitions and concepts
                         in the Gr 11 Curriculum in a simple way. The list is by no means complete, and if you want to contribute,
                         please refer to the contributing section. 
                 </p>
             </div>
-            <div class="main-content-info right">
+            <div class="main-content-info-right">
                 <h2 class="subtitle">Contributing</h2>
                 <p>Whether you want to add a definition, implement a new feature, or improve upon something that exists, simply
                     <a href="https://github.com/RyanL123/Chemistry-11">fork this repo on GitHub</a>, create a new branch,
@@ -104,15 +101,15 @@
                 </p>
             </div>
         </div>
-        <div class="main-content-info-div">
-            <div class="main-content-info left">
+        <div class="flex-box">
+            <div class="main-content-info-left">
                 <h2 class="subtitle">Anything else like this?</h2>
                 <p>This is currently the only site I have made, more sites like Functions 11, Physics 11 will
                     be created in the future, given that I have enough time.</p>
             </div>
-            <div class="main-content-info right">
+            <div class="main-content-info-right">
                 <h2 class="subtitle">This is so useless!</h2>
-                <p>I'm very sorry that you feel this way. If possible, please give me feedback on how the site could be improved
+                <p>This is my first ever web project, and this site is a work in progress. If possible, please give me feedback on how the site could be improved
                     using the <a href="feedback.html">Feedback Form</a>.
                 </p>
             </div>
@@ -122,9 +119,6 @@
         <h2 class="subtitle">Contributors</h2>
         <p>(Contributors are retrieved using GitHub's REST API)</p>
     </div>
-    <!-- <div id="feedback">
-        <img id="feedback-icon" src="images/feedback.svg">
-    </div> -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
