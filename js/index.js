@@ -46,7 +46,7 @@ function smoothScroll(){
   // Scroll to a certain element
   document.getElementById('site-features').scrollIntoView({ 
     behavior: 'smooth',
-    block: "center",
+    block: "start",
     inline: "center"
   });
 }
