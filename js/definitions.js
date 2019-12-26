@@ -1,5 +1,5 @@
 // parses definitions.json into definitions variable
-let url = "../JSON/definitions.json"
+let url = "./JSON/definitions.json"
 var xhr = new XMLHttpRequest();
 xhr.open("GET",url, true);
 xhr.onreadystatechange = function() {
