@@ -1,5 +1,5 @@
 // parses polyatomic.json into polyatomicIons variable
-let url = "./JSON/polyatomic.json"
+let url = "JSON/polyatomic.json"
 var xhr = new XMLHttpRequest();
 xhr.open("GET", url, true);
 xhr.onreadystatechange = function () {
