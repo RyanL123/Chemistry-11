@@ -25,7 +25,7 @@ xhr.send(null);
 //filters cards, prioritizing definitions with the search query in the title
 function filter() {
     // parses definitions.json into definitions variable
-    let url = "../JSON/definitions.json"
+    let url = "JSON/definitions.json"
     var xhr = new XMLHttpRequest();
     xhr.open("GET",url, true);
     xhr.onreadystatechange = function() {
