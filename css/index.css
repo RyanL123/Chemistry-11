@@ -142,9 +142,10 @@
     font-family: OxyLight;
 }
 
-.navbar {
+.navbar nav{
     text-align: left;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     z-index: 10;
     padding: 10px 0%;
@@ -171,24 +172,53 @@
     transition: color 200ms linear;
 }
 
-.navbar nav {
-    width: 100%;
-}
-
-.navbar img {
-    vertical-align: middle;
+.navbar img{
     height: 40px;
 }
 
-.navbar ul {
+.navbar .navbar-links {
+    width: 100%;
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .navbar li {
-    display: inline-block;
+    display: block;
     margin: 0% 2%;
+}
+
+#burger {
+    margin: 0% 1%;
+    display: none;
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    .navbar nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    .navbar-links li{
+        margin: 1% 2%;
+    }
+    .active{
+        display: flex !important;
+    }
+    #burger {
+        display: block;
+        margin-right: 2%;
+    }
 }
 
 button {
@@ -647,7 +677,6 @@ body {
 
 .contributor-name {
     font-family: OxyReg;
-    /* font-size: 10px; */
     font-size: 1.5em;
 }
 
@@ -658,7 +687,6 @@ body {
 
 #solubility-cards-container {
     margin: 0% 10%;
-    margin-top: 100px;
 }
 
 .card .subtitle {

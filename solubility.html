@@ -4,21 +4,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chemistry 11 | Solubility Rules</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- Javascript -->
+    <script src="https://kit.fontawesome.com/c7434d4388.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navbar sticky">
+    <div class="navbar">
         <nav>
-            <ul>
-                <li><a href="index.html"><img src="./images/logos/favicon.png"></a></li>
+            <a href="index.html" style="margin: 0% 2%"><img src="./images/logos/favicon.png"></a>
+            <a href="#" id="burger"><i class="fas fa-bars"></i></a>
+            <ul class="navbar-links">
                 <li><a href="index.html" class="hover-underline-animation">Home</a></li>
                 <li><a href="definitions.html" class="hover-underline-animation">Definitions</a></li>
                 <li><a href="periodictable.html" class="hover-underline-animation">Periodic Table</a></li>
                 <li><a href="polyatomic.html" class="hover-underline-animation">Polyatomic Ions</a></li>
                 <li><a href="solubility.html" class="selected-tab">Solubility Rules</a></li>
+                <li><a href="feedback.html" style="margin: 0% 1%"><button>Feedback</button></a></li>
             </ul>
         </nav>
-        <a href="feedback.html" style="margin-right: 1%"><button >Feedback</button></a>
     </div>
     <div id="solubility-cards-container">
         <div class="card">
@@ -53,5 +59,6 @@
             <h3>Note: The hydroxides of group 2 (the alkaline earth metals) are slightly soluble. Virtually all other hydroxides are insoluble. Also, ammonium hydroxide is slightly soluble.</h3>
         </div>
     </div>
+    <script src="js/nav.js"></script>
 </body>
 </html>
