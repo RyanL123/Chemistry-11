@@ -82,7 +82,7 @@
         },
         {
             "Term": "Octet",
-            "Definition": "An atom having 8 electrons in its outer most shell, therefore becoming stable",
+            "Definition": "An atom having 8 electrons in its outer most shell",
             "Link": "https://simple.wikipedia.org/wiki/Octet_rule"
         },
         {
@@ -152,7 +152,7 @@
         },
         {
             "Term": "Molar Mass",
-            "Definition": "Mass of 1 mol of particles (usually calculated to 2 decimal places) - Equivalent to atomic mass",
+            "Definition": "Mass of 1 mol of particles (usually calculated to 2 decimal places) - Equal to atomic mass",
             "Link": "https://simple.wikipedia.org/wiki/Molar_mass"
         },
         {
