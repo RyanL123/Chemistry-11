@@ -267,7 +267,6 @@ body {
 #main-title {
     font-family: OxyReg;
     text-align: center;
-    font-size: 50px;
     height: 100vh;
     word-wrap: break-word;
 }
@@ -277,7 +276,9 @@ body {
     font-size: 30px;
     font-family: OxyReg;
 }
+
 .title {
+    font-size: 100px;
     font-family: OxyReg;
     margin-top: 0;
     margin-bottom: 0;
@@ -295,6 +296,13 @@ body {
     margin: 0;
     word-wrap: break-word;
 }
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 50px;
+    }
+}
+
 
 .text-left {
     text-align: left;
@@ -463,9 +471,9 @@ body {
 
 #definition-title {
     text-align: center;
-    font-size: 50px;
     margin-top: 100px;
     margin-bottom: 5%;
+    word-wrap: break-word;
 }
 
 #periodictable {
@@ -498,6 +506,12 @@ body {
     width: 50%;
     table-layout: fixed;
     border-collapse: collapse;
+}
+
+@media screen and (max-width: 800px){
+    .polyatomic-table table {
+        width: 90%;
+    }
 }
 
 .polyatomic-table th {
