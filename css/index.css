@@ -269,6 +269,7 @@ body {
     text-align: center;
     font-size: 50px;
     height: 100vh;
+    word-wrap: break-word;
 }
 
 #main-title h3 {
@@ -292,6 +293,7 @@ body {
     font-size: 50px;
     color: rgb(15, 50, 86);
     margin: 0;
+    word-wrap: break-word;
 }
 
 .text-left {
@@ -706,6 +708,7 @@ body {
     font-size: 20px;
     color: #696969;
     margin-bottom: 0;
+    word-wrap: break-word;
 }
 
 .card {
