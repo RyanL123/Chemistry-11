@@ -84,10 +84,10 @@
     }
 }
 
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 .selected-tab {
     display: inline-block;
@@ -253,6 +253,7 @@ button:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .flex-box {
@@ -301,8 +302,10 @@ body {
     .title {
         font-size: 50px;
     }
+    .subtitle {
+        font-size: 30px;
+    }
 }
-
 
 .text-left {
     text-align: left;
@@ -316,7 +319,6 @@ body {
     margin: 5% 0%;
     font-family: OxyReg;
     text-align: left;
-    padding: 0% 2.5%;
     font-size: 20px;
 }
 
@@ -356,17 +358,18 @@ body {
     width: 50%;
 }
 
+#main-content .flex-box {
+    margin-top: 2%;
+}
+
 @media screen and (max-width: 800px){
-    .main-content-info-div{
-        flex-direction: column;
-    }
     .main-content-info-left{
         width: 100%;
-        margin: 0;
+        margin: 2% 0%;
     }
     .main-content-info-right{
         width: 100%;
-        margin: 0;
+        margin: 2% 0%;
     }
 }
 
@@ -465,6 +468,12 @@ body {
     transition: border 200ms linear;
 }
 
+@media screen and (max-width: 800px) {
+    #filter {
+        font-size: 16px;
+    }
+}
+
 .highlight {
     color: blue;
 }
@@ -494,6 +503,7 @@ body {
 }
 
 .polyatomic-table {
+    margin: 0% 5%;
     font-family: OxyLight;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -503,15 +513,9 @@ body {
 }
 
 .polyatomic-table table {
-    width: 50%;
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-}
-
-@media screen and (max-width: 800px){
-    .polyatomic-table table {
-        width: 90%;
-    }
 }
 
 .polyatomic-table th {
@@ -648,6 +652,7 @@ body {
 
 #contributors {
     text-align: center;
+    margin: 0% 5%;
 }
 
 #contributors p {
@@ -693,7 +698,13 @@ body {
 
 .contributor-name {
     font-family: OxyReg;
-    font-size: 1.5em;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px){
+    .contributor-name {
+        font-size: 20px;
+    }
 }
 
 #definitions-cards-container {
@@ -703,6 +714,7 @@ body {
 
 #solubility-cards-container {
     margin: 0% 10%;
+    margin-top: 100px;
 }
 
 .card .subtitle {
@@ -718,11 +730,18 @@ body {
 }
 
 .card h3 {
+    margin-top: 1%;
     font-family: OxyLight;
     font-size: 20px;
     color: #696969;
-    margin-bottom: 0;
     word-wrap: break-word;
+}
+
+@media screen and (max-width: 800px) {
+    .card h3 {
+        font-size: 18px;
+        margin-top: 2%;
+    }
 }
 
 .card {
