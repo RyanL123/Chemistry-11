@@ -6,13 +6,13 @@
 
 # TODO (In no particular order)
 
-[ ] Implement flash cards
-[ ] Assign units to definitions
-[ ] Implement molar mass calculator
-[ ] Add sample problems
-[x] Add solubility rules
-[x] Responsive nav bar
-[x] Mobile site
+- [ ] Implement flash cards
+- [ ] Assign units to definitions
+- [ ] Implement molar mass calculator
+- [ ] Add sample problems
+- [x] Add solubility rules
+- [x] Responsive nav bar
+- [x] Mobile site
 
 # Known problems
 
