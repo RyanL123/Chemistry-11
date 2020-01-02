@@ -49,15 +49,22 @@
         </nav>
     </div>
     <div id="main-title">
+        <div id="desktop-bar">
+            This site is best viewed on desktop
+            <button id="close-notification-button" onclick="hideDesktopBar()">Ok</button>
+        </div>
         <div class="center-align">
             <h1 class="title">Chemistry 11</h1>
-            <h3>Simple. Compact. Minimal.</h3>
+            <!-- <h3>Simple. Compact. Minimal.</h3> -->
             <div id="down-arrow">
                 <img onclick="smoothScroll()" src="images/down-arrow.png" width=50>
             </div>
         </div>
     </div>
     <div id="site-features">
+        <div id="site-features-title">
+            <h1 class="title">Why should you use this?</h1>
+        </div>
         <div class="flex-box">
             <div class="site-features-card">
                 <i class="fas fa-flask fa-3x"></i>
@@ -84,59 +91,32 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="flex-box">
-            <div class="site-features-info">
-                <div>
-                    <h2 class="subtitle">Compact Definitions</h2>
-                    <p>Summarized definition of any concept or topic</p>
-                </div>
-            </div>
-            <div class="site-features-info">
-                <div>
-                    <img src="images/site-info/compact-definitions.png">
-                </div>
-            </div>
-        </div>
-        <div class="flex-box">
-            <div class="site-features-info">
-                <div>
-                    <img src="images/site-info/filter-results.png">
-                </div>
-            </div>
-            <div class="site-features-info text-right">
-                <div>
-                    <h2 class="subtitle">Filter Results</h2>
-                    <p> Find any definition or concept containing the filtered keyword</p>
-                </div>
-            </div>
-        </div> -->
     </div>
     <div id="site-stats">
         <div class="flex-box">
-            <div class="site-stats-card">
-                <h1 class="subtitle">30+</h1>
-                <h2 class="subtitle">Polyatomic Ions</h2>
-            </div>
             <div class="site-stats-card">
                 <h1 class="subtitle">75+</h1>
                 <h2 class="subtitle">Definitions and Concepts</h2>
             </div>
             <div class="site-stats-card">
-                <h1 class="subtitle">5+</h1>
-                <h2 class="subtitle">Solubility Rules</h2>
+                <h1 class="subtitle">30+</h1>
+                <h2 class="subtitle">Polyatomic Ions</h2>
             </div>
         </div>
     </div>
-    <div id="main-content">
+    <div id="FAQ"> 
+        <div id="FAQ-title">
+            <h1 class="title">FAQ</h1>
+        </div>
         <div class="flex-box">
-            <div class="main-content-info-left">
+            <div class="FAQ-info-left">
                 <h2 class="subtitle">What's this for?</h2>
                 <p> This website is intended to summarize all the Chemistry definitions and concepts
                         in the Gr 11 Curriculum in a simple way. The list is by no means complete, and if you want to contribute,
                         please refer to the contributing section.
                 </p>
             </div>
-            <div class="main-content-info-right">
+            <div class="FAQ-info-right">
                 <h2 class="subtitle">Contributing</h2>
                 <p>Whether you want to add a definition, implement a new feature, or improve upon something that exists, simply
                     <a href="https://github.com/RyanL123/Chemistry-11">fork this repo on GitHub</a>, create a new branch,
@@ -146,12 +126,12 @@
             </div>
         </div>
         <div class="flex-box">
-            <div class="main-content-info-left">
+            <div class="FAQ-info-left">
                 <h2 class="subtitle">Anything else like this?</h2>
                 <p>This is currently the only site I have made, more sites like Functions 11, Physics 11 will
                     be created in the future, given that I have enough time.</p>
             </div>
-            <div class="main-content-info-right">
+            <div class="FAQ-info-right">
                 <h2 class="subtitle">This is so useless!</h2>
                 <p>This is my first ever web project, and this site is a work in progress. If possible, please give me feedback on how the site could be improved
                     using the <a href="feedback.html">Feedback Form</a>.
