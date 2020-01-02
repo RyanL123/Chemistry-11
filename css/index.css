@@ -316,7 +316,7 @@ body {
 }
 
 #main-content {
-    margin: 5% 0%;
+    margin-top: 8%;
     font-family: OxyReg;
     text-align: left;
     font-size: 20px;
@@ -324,7 +324,6 @@ body {
 
 
 #main-content p{
-    letter-spacing: 1px;
     line-height: 1.4em;
     font-family: OxyLight;
     font-size: 18px;
@@ -386,49 +385,82 @@ body {
     animation: pulse 2s 3s ease-out infinite;
 }
 
-#site-features {
-    background-color: #f3f5f9;
-}
-
 #site-features .flex-box {
-    padding: 5% 0%;
+    justify-content: center;
 }
 
-#site-features img {
-    width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.site-features-card {
+    background-color: white;
+    text-align: center;
     border-radius: 10px;
-    vertical-align: middle;
+    border: 1px lightgray solid;
+    padding: 3%;
+    margin: 5% 2%;
+    width: 20%;
+    -webkit-transition: border-color 200ms linear;
+    -ms-transition: border-color 200ms linear;
+    transition: border-color 200ms linear;
+}
+
+.site-features-card-content {
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .site-features-card {
+        width: 100%;
+        padding: 5% 0%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .site-features-card-content {
+        margin-top: 5%;
+    }
+}
+
+.site-features-card i {
+    color: #1b6bf5;
+}
+
+.site-features-card:hover {
+    border: 1px solid #1b6bf5;
+    -webkit-transition: border-color 200ms linear;
+    -ms-transition: border-color 200ms linear;
+    transition: border-color 200ms linear;
 }
 
 #site-features p {
-    font-family: OxyReg;
-    font-size: 25px;
-    margin: 0;
+    font-family: OxyLight;
+    font-size: 18px;
     color: #696969;
 }
 
 #site-features .subtitle {
-    color: #1b6bf5;
-    margin: 0;
+    font-size: 30px;
+    margin-bottom: 5%;
 }
 
-.site-features-info {
-    padding: 0% 5%;
-    width: 50%;
+#site-stats .flex-box {
+    justify-content: space-evenly;
 }
 
-@media screen and (max-width: 800px){
-    .site-features-div-top {
-        flex-direction: column;
-    }
-    .site-features-div-bottom {
-        flex-direction: column;
-    }
-    .site-features-info {
-        width: 100%;
-        padding: 3% 0;
-    }
+#site-stats {
+    background-color: #1b6bf5;
+    margin-top: 5%;  
+}
+
+.site-stats-card {
+    margin: 5% 2%;
+}
+
+.site-stats-card .subtitle{
+    color: white;
+    text-align: center;
+}
+
+.site-stats-card h2 {
+    font-size: 30px;
 }
 
 .center-align {
@@ -653,6 +685,7 @@ body {
 #contributors {
     text-align: center;
     margin: 0% 5%;
+    margin-top: 8%;
 }
 
 #contributors p {
