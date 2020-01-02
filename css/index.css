@@ -267,7 +267,7 @@ body {
 
 #desktop-bar {
     margin: 0% 15%;
-    margin-top: 10vh;
+    margin-top: 15vh;
     font-size: 16px;
     min-width: 250px; /* Set a default minimum width */
     color: #fff; /* White text color */
@@ -282,15 +282,18 @@ body {
     display: none;
 }
 
+#close-notification-button {
+    border-radius: 99999px;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 800px){
     #desktop-bar {
         display: block;
     }
-}
-
-#close-notification-button {
-    border-radius: 99999px;
-    font-size: 15px;
+    #close-notification-button {
+        margin-top: 1%;
+    }
 }
 
 #main-title {
