@@ -374,6 +374,11 @@
             "Term": "Conjugate Acid",
             "Definition": "A chemical compound formed by the reception of a proton (H+) by a base",
             "Link": "https://en.wikipedia.org/wiki/Conjugate_acid"
+        },
+        {
+            "Term": "Electron Configuration",
+            "Definition": "Arrangement of electrons within an atom",
+            "Link": "https://simple.wikipedia.org/wiki/Electron_configuration"
         }
     ]
 }
