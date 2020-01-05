@@ -154,6 +154,16 @@
           "formula": "PO<sub>4</sub>",
           "name": "Phosphate",
           "charge": -3
+        },
+        {
+          "formula": "NH<sub>4</sub>",
+          "name": "Ammonium",
+          "charge": 1
+        },
+        {
+          "formula": "NH<sub>3</sub>",
+          "name": "Ammonia",
+          "charge": 0
         }
     ]
 }

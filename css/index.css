@@ -708,6 +708,12 @@ body {
     transition: border 200ms linear;
 }
 
+@media screen and (max-width: 800px){
+    #feedback-text {
+        font-size: 16px;
+    }
+}
+
 #feedback-submit {
     margin-top: 5%;
     border-radius: 10px;
@@ -807,6 +813,19 @@ body {
     margin-top: 100px;
 }
 
+#equations-cards-container {
+    margin: 0% 10%;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 800px){
+    .card {
+        overflow: scroll;
+    }
+}
+
+
+
 .card .subtitle {
     font-size: 30px;
 }
@@ -863,11 +882,17 @@ body {
     transition: color 100ms linear;
 }
 
+.math {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    overflow: none;
+}
+
 #snackbar-success {
     visibility: hidden; /* Hidden by default. Visible on click */
     min-width: 250px; /* Set a default minimum width */
     margin-left: -125px; /* Divide value of min-width by 2 */
-    /* background-color: #39C16C; Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
     border-radius: 10px; /* Rounded borders */
@@ -885,7 +910,6 @@ body {
     visibility: hidden; /* Hidden by default. Visible on click */
     min-width: 250px; /* Set a default minimum width */
     margin-left: -125px; /* Divide value of min-width by 2 */
-    /* background-color: #39C16C; Black background color */
     color: #fff; /* White text color */
     text-align: center; /* Centered text */
     border-radius: 10px; /* Rounded borders */
@@ -898,6 +922,7 @@ body {
     background:rgba(255,80,64,0.8);
     backdrop-filter: saturate(180%) blur(20px);
 }
+
 
 #snackbar-success.show {
     visibility: visible; /* Show the snackbar */
