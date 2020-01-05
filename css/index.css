@@ -335,6 +335,9 @@ body {
     .subtitle {
         font-size: 30px !important;
     }
+    * {
+        letter-spacing: 0rem !important;
+    }
 }
 
 .text-left {
