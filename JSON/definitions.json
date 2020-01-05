@@ -379,6 +379,21 @@
             "Term": "Electron Configuration",
             "Definition": "Arrangement of electrons within an atom",
             "Link": "https://simple.wikipedia.org/wiki/Electron_configuration"
+        },
+        {
+            "Term": "VSEPR",
+            "Definition": "Model used to predict the geometry of individual molecules from the number of electron pairs surrounding their central atoms",
+            "Link": "https://en.wikipedia.org/wiki/VSEPR_theory"
+        },
+        {
+            "Term": "Charles Law (Law of Volumes)",
+            "Definition": "When the pressure on a sample of a dry gas is held constant, the Kelvin temperature and the volume will be in direct proportion",
+            "Link": "https://en.wikipedia.org/wiki/Charles's_law"
+        },
+        {
+            "Term": "Boyle's Law",
+            "Definition": "The pressure of a given mass of an ideal gas is inversely proportional to its volume at a constant temperature.",
+            "Link": "https://en.wikipedia.org/wiki/Boyle's_law"
         }
     ]
 }
