@@ -87,6 +87,8 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .selected-tab {
@@ -521,6 +523,9 @@ body {
     .site-stats-card {
         margin: 10% 2%;
     }
+    .site-stats-card h1{
+        font-size: 50px !important;
+    }
 }
 
 .center-align {
@@ -759,6 +764,7 @@ body {
     margin: 0;
 }
 
+
 .contributors-sub-div {
     display: inline-block;
     text-align: center;
@@ -802,7 +808,7 @@ body {
 
 @media screen and (max-width: 800px){
     .contributor-name {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
