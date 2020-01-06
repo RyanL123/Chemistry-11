@@ -394,6 +394,16 @@
             "Term": "Boyle's Law",
             "Definition": "The pressure of a given mass of an ideal gas is inversely proportional to its volume at a constant temperature.",
             "Link": "https://en.wikipedia.org/wiki/Boyle's_law"
+        },
+        {
+            "Term": "Intermolecular Force",
+            "Definition": "Forces that exist between molecules",
+            "Link": "https://en.wikipedia.org/wiki/Intermolecular_force"
+        },
+        {
+            "Term": "Intramolecular Force",
+            "Definition": "Forces that hold atoms together in a molecule",
+            "Link": "https://en.wikipedia.org/wiki/Intramolecular_force"
         }
     ]
 }
