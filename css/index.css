@@ -765,7 +765,6 @@ body {
     margin: 0;
 }
 
-
 .contributors-sub-div {
     display: inline-block;
     text-align: center;
@@ -835,7 +834,6 @@ body {
 }
 
 
-
 .card .subtitle {
     font-size: 30px;
 }
@@ -890,6 +888,21 @@ body {
     -webkit-transition: color 100ms linear;
     -ms-transition: color 100ms linear;
     transition: color 100ms linear;
+}
+
+#practice-exams-container{
+    margin: 200px 0%;
+    text-align: center;
+}
+
+#practice-exams-container .flex-box{
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+
+#practice-exams-container a {
+    text-decoration: none;
 }
 
 .math {
