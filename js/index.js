@@ -15,7 +15,7 @@ firebase.analytics();
 // Smooth scrolling
 function smoothScroll(){
   window.scrollTo({
-    top: 900,
+    top: 700,
     behavior: "smooth"
   })
 }

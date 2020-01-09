@@ -332,7 +332,7 @@ body {
 
 @media screen and (max-width: 800px) {
     .title {
-        font-size: 50px !important;
+        font-size: 40px !important;
     }
     .subtitle {
         font-size: 30px !important;
@@ -450,13 +450,10 @@ body {
     background-color: white;
     text-align: center;
     border-radius: 10px;
-    border: 1px lightgray solid;
+    border: 1px solid #1b6bf5;
     padding: 3%;
     margin: 5% 2%;
     width: 20%;
-    -webkit-transition: border-color 200ms linear;
-    -ms-transition: border-color 200ms linear;
-    transition: border-color 200ms linear;
 }
 
 .site-features-card-content {
@@ -477,13 +474,6 @@ body {
 
 .site-features-card i {
     color: #1b6bf5;
-}
-
-.site-features-card:hover {
-    border: 1px solid #1b6bf5;
-    -webkit-transition: border-color 200ms linear;
-    -ms-transition: border-color 200ms linear;
-    transition: border-color 200ms linear;
 }
 
 #site-features p {
@@ -855,8 +845,11 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .card .subtitle {
+        font-size: 26px !important;
+    }
     .card h3 {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 2%;
     }
 }
@@ -864,23 +857,13 @@ body {
 .card {
     margin-top: 2%;
     border-radius: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #1b6bf5;
     padding: 18px;
-    -webkit-transition: border-color 200ms linear;
-    -ms-transition: border-color 200ms linear;
-    transition: border-color 200ms linear;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -ms-animation: fadein 1s; /* Internet Explorer */
     -o-animation: fadein 1s; /* Opera < 12.1 */
     animation: fadein 1s;
-}
-
-.card:hover {
-    border: 1px solid #1b6bf5;
-    -webkit-transition: border-color 200ms linear;
-    -ms-transition: border-color 200ms linear;
-    transition: border-color 200ms linear;
 }
 
 .card a:hover {
@@ -903,6 +886,14 @@ body {
 
 #practice-exams-container a {
     text-decoration: none;
+}
+
+#practice-exams-note {
+    text-align: center;
+    margin: 3% 0%;
+    margin-top: 5%;
+    font-family: OxyLight;
+    color: #696969;
 }
 
 .math {
