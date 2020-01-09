@@ -386,14 +386,24 @@
             "Link": "https://en.wikipedia.org/wiki/VSEPR_theory"
         },
         {
-            "Term": "Charles Law (Law of Volumes)",
-            "Definition": "When the pressure on a sample of a dry gas is held constant, the Kelvin temperature and the volume will be in direct proportion",
+            "Term": "Charles's Law (Law of Volumes)",
+            "Definition": "Volume is directly proportional to temperature",
             "Link": "https://en.wikipedia.org/wiki/Charles's_law"
         },
         {
             "Term": "Boyle's Law",
-            "Definition": "The pressure of a given mass of an ideal gas is inversely proportional to its volume at a constant temperature.",
+            "Definition": "Pressure is inversely proportional to volume",
             "Link": "https://en.wikipedia.org/wiki/Boyle's_law"
+        },
+        {
+            "Term": "Gay-Lussac's Law",
+            "Definition": "Pressure is directly proportional to temperature",
+            "Link": "https://en.wikipedia.org/wiki/Gay-Lussac%27s_law"
+        },
+        {
+            "Term": "Avogadro's Law",
+            "Definition": "The amount (mole) of gas is directly proportional to the volume; Equal volumes of all ideal gases at the same temperature and pressure contain the same number of molecules.",
+            "Link": "https://en.wikipedia.org/wiki/Avogadro%27s_law"
         },
         {
             "Term": "Intermolecular Force",
