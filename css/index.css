@@ -537,6 +537,7 @@ body {
 }
 
 #filter-div {
+    margin-top: 100px;
     text-align: center;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
