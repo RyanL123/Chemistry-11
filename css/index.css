@@ -323,7 +323,7 @@ body {
 }
 
 .subtitle {
-    font-family: OxyBold;
+    font-family: OxyReg;
     font-size: 50px;
     color: rgb(15, 50, 86);
     margin: 0;
@@ -333,6 +333,7 @@ body {
 @media screen and (max-width: 800px) {
     .title {
         font-size: 40px !important;
+        letter-spacing: -0.1rem !important;
     }
     .subtitle {
         font-size: 30px !important;
@@ -351,7 +352,7 @@ body {
 }
 
 #FAQ {
-    margin-top: 5%;
+    margin-top: 8%;
     font-family: OxyReg;
     text-align: left;
     font-size: 20px;
@@ -407,11 +408,11 @@ body {
 @media screen and (max-width: 800px){
     .FAQ-info-left{
         width: 100%;
-        margin: 2% 0%;
+        margin: 5% 0%;
     }
     .FAQ-info-right{
         width: 100%;
-        margin: 2% 0%;
+        margin: 5% 0%;
     }
 }
 
@@ -442,6 +443,7 @@ body {
 }
 
 #site-features-title {
+    margin: 0% 2%;
     margin-bottom: 5%;
 }
 
@@ -466,6 +468,7 @@ body {
     .site-features-card {
         width: 100%;
         padding: 5% 0%;
+        margin: 5% 0%;
     }
     .site-features-card-content {
         margin-top: 5%;
@@ -503,6 +506,7 @@ body {
 .site-stats-card .subtitle{
     color: white;
     text-align: center;
+    
 }
 
 .site-stats-card h2 {
@@ -514,7 +518,10 @@ body {
         margin: 10% 2%;
     }
     .site-stats-card h1{
-        font-size: 50px !important;
+        font-size: 40px !important;
+    }
+    .site-stats-card h2 {
+        font-family: OxyBold;
     }
 }
 
@@ -619,6 +626,15 @@ body {
 
 .polyatomic-table tbody tr:hover {
     background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 800px){
+    .polyatomic-table th {
+        font-size: 20px;
+    }
+    .polyatomic-table td {
+        font-size: 16px;
+    }
 }
 
 #feedback-explanation-div {
@@ -890,7 +906,7 @@ body {
 
 #practice-exams-note {
     text-align: center;
-    margin: 3% 0%;
+    padding: 0% 3%;
     margin-top: 5%;
     font-family: OxyLight;
     color: #696969;
