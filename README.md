@@ -13,7 +13,3 @@
 - [x] Add solubility rules
 - [x] Responsive nav bar
 - [x] Mobile site
-
-# Known problems
-
-- Clicking nav bar on mobile scrolls to the top of the page

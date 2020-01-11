@@ -5,17 +5,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153551737-1"></script>
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-153551737-1');
-    </script>
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -23,6 +12,15 @@
     <script src="js/index.js"></script>
     <script src="js/contributors.js"></script>
     <script src="js/responsiveNav.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153551737-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-153551737-1');
+    </script>
 
     <!-- Stylesheets -->
     <link rel="stylesheet", type="text/css", href="css/index.css">
@@ -37,7 +35,7 @@
     <div class="navbar sticky">
         <nav>
             <a href="index.html" style="margin: 0% 2%"><img src="./images/logos/favicon.png"></a>
-            <a href="#" id="burger"><i class="fas fa-bars"></i></a>
+            <a href="JavaScript:void(0)" id="burger"><i class="fas fa-bars"></i></a>
             <ul class="navbar-links">
                 <li><a href="index.html" class="selected-tab">Home</a></li>
                 <li><a href="definitions.html" class="hover-underline-animation">Definitions</a></li>
