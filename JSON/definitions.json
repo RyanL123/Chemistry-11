@@ -77,7 +77,7 @@
         },
         {
             "Term": "Hydrogen Bonding",
-            "Definition": "Strongest intermolecular force that exists only between Hydrogen atoms bonded to Nitrogen, Oxygen and/or Flourine",
+            "Definition": "Strongest intermolecular force that exists only between Hydrogen atoms bonded to Nitrogen, Oxygen and/or Fluorine",
             "Link": "https://simple.wikipedia.org/wiki/Hydrogen_bond"
         },
         {
@@ -342,7 +342,7 @@
         },
         {
             "Term": "Equivalence Point",
-            "Definition": "Perfect stochiometric amounts where the acid and base have neutralized each other",
+            "Definition": "Perfect stoichiometric amounts where the acid and base have neutralized each other",
             "Link": "https://en.wikipedia.org/wiki/Equivalence_point"
         },
         {
@@ -404,6 +404,21 @@
             "Term": "Avogadro's Law",
             "Definition": "The amount (mole) of gas is directly proportional to the volume; Equal volumes of all ideal gases at the same temperature and pressure contain the same number of molecules.",
             "Link": "https://en.wikipedia.org/wiki/Avogadro%27s_law"
+        },
+        {
+            "Term": "Dalton's Law",
+            "Definition": "The total pressure of a mixture of gases is the sum of the pressures of each of the individual gases",
+            "Link": "https://en.wikipedia.org/wiki/Dalton%27s_law"
+        },
+        {
+            "Term": "STP (Standard Temperature and Pressure)",
+            "Definition": "0 &#176C and 101.3 kPa",
+            "Link": "https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure"
+        },
+        {
+            "Term": "SATP (Standard Ambient Temperature and Pressure)",
+            "Definition": "25 &#176C and 100 kPa",
+            "Link": "https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure"
         },
         {
             "Term": "Intermolecular Force",
