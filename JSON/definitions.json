@@ -251,8 +251,8 @@
             "Link": "https://simple.wikipedia.org/wiki/Aqueous_solution"
         },
         {
-            "Term": "PH",
-            "Definition": "Scale used to specify how acidic or basic a water-based solution is",
+            "Term": "pH",
+            "Definition": "Scale used to specify how acidic or basic a water-based solution is. Higher = more acidic",
             "Link": "https://simple.wikipedia.org/wiki/PH"
         },
         {
@@ -429,6 +429,36 @@
             "Term": "Intramolecular Force",
             "Definition": "Forces that hold atoms together in a molecule",
             "Link": "https://en.wikipedia.org/wiki/Intramolecular_force"
+        },
+        {
+            "Term": "Bohr Model",
+            "Definition": "An atom is a small dense nucleus surrounded by orbiting electrons",
+            "Link": "https://simple.wikipedia.org/wiki/Bohr_model"
+        },
+        {
+            "Term": "Orbitals",
+            "Definition": "Space around an atom where the electrons are most likely to be",
+            "Link": "https://simple.wikipedia.org/wiki/Atomic_orbital"
+        },
+        {
+            "Term": "Solubility",
+            "Definition": "Chemical property that measures the ability of substance (solute) to dissolve in a solvent",
+            "Link": "https://simple.wikipedia.org/wiki/Solubility"
+        },
+        {
+            "Term": "pOH",
+            "Definition": "Scale used to specify how acidic or basic a water-based solution is. Higher = more basic",
+            "Link": "https://simple.wikipedia.org/wiki/PH"
+        },
+        {
+            "Term": "Strong/weak acid",
+            "Definition": "Refers to the tendency of an acid to dissociate into ions in a aqueous solution",
+            "Link": "https://en.wikipedia.org/wiki/Acid_strength"
+        },
+        {
+            "Term": "Strong/weak base",
+            "Definition": "Refers to the tendency of a base to dissociate into ions in a aqueous solution",
+            "Link": "https://en.wikipedia.org/wiki/Weak_base"
         }
     ]
 }
