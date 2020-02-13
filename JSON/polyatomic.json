@@ -165,5 +165,70 @@
           "name": "Ammonia",
           "charge": 0
         }
+        {
+          "formula": "BO<sub>3</sub>",
+          "name": "Borate",
+          "charge": -3
+        }
+        {
+          "formula": "N<sub>3</sub>",
+          "name": "Azide",
+          "charge": -1
+        }
+        {
+          "formula": "Cr<sub>2</sub>O<sub>7</sub>",
+          "name": "Dichromate",
+          "charge": -2
+        }
+        {
+          "formula": "ClO<sub>4</sub>",
+          "name": "Perchlorate",
+          "charge": -1
+        }
+        {
+          "formula": "ClO",
+          "name": "Hypochlorite",
+          "charge": -1
+        }
+        {
+          "formula": "BrO<sub>4</sub>",
+          "name": "Perbromate",
+          "charge": -1
+        }
+        {
+          "formula": "BrO<sub>2</sub>",
+          "name": "Bromite",
+          "charge": -1
+        }
+        {
+          "formula": "BrO<sub>3</sub>",
+          "name": "Bromate",
+          "charge": -1
+        }
+        {
+          "formula": "BrO",
+          "name": "Hypobromite",
+          "charge": -1
+        }
+        {
+          "formula": "IO<sub>3</sub>",
+          "name": "Iodate",
+          "charge": -1
+        }
+        {
+          "formula": "IO<sub>4</sub>",
+          "name": "Periodate",
+          "charge": -1
+        }
+        {
+          "formula": "IO<sub>2</sub>",
+          "name": "Iodite",
+          "charge": -1
+        }
+        {
+          "formula": "IO",
+          "name": "Hypoiodite",
+          "charge": -1
+        }
     ]
 }
