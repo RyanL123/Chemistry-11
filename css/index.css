@@ -897,12 +897,11 @@ body {
 #practice-exams-container .flex-box{
     justify-content: space-evenly;
     text-align: center;
-    flex-direction: column;
+    
 }
 
 #practice-exams-container a {
     text-decoration: none;
-    margin: 1.5%;
 }
 
 #practice-exams-note {
@@ -911,10 +910,6 @@ body {
     margin-top: 5%;
     font-family: OxyLight;
     color: #696969;
-}
-
-#practice-exams-note p {
-    margin: 1.5%;
 }
 
 .math {
