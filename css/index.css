@@ -590,15 +590,9 @@ body {
     animation: fadein 1s;
 }
 
-#polyatomic-title {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 100px;
-    margin-bottom: 5%;
-}
-
 .polyatomic-table {
     margin: 0% 5%;
+    margin-top: 10%;
     font-family: OxyLight;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1s; /* Firefox < 16 */
@@ -629,6 +623,9 @@ body {
 }
 
 @media screen and (max-width: 800px){
+    .polyatomic-table {
+        margin-top: 20%;
+    }
     .polyatomic-table th {
         font-size: 20px;
     }
