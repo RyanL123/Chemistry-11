@@ -1,239 +1,324 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chemistry 11 | Formulas</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Chemistry 11 | Formulas</title>
 
-    <!-- Javascript -->
-    <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script defer src="https://kit.fontawesome.com/c7434d4388.js" crossorigin="anonymous"></script>
-    <script defer src="js/responsiveNav.js"></script>
+        <!-- Javascript -->
+        <script
+            defer
+            src="https://polyfill.io/v3/polyfill.min.js?features=es6"
+        ></script>
+        <script
+            defer
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
+        <script
+            defer
+            src="https://kit.fontawesome.com/c7434d4388.js"
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/responsiveNav.js"></script>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="./images/logos/favicon.png">
-</head>
-<body>
-    <div class="navbar sticky">
-        <nav>
-            <a href="index.html" style="margin: 0% 2%"><img src="./images/logos/favicon.png"></a>
-            <a href="JavaScript:void(0)" id="burger"><i class="fas fa-bars"></i></a>
-            <ul class="navbar-links">
-                <li><a href="index.html" class="hover-underline-animation">Home</a></li>
-                <li><a href="definitions.html" class="hover-underline-animation">Definitions</a></li>
-                <li><a href="periodictable.html" class="hover-underline-animation">Periodic Table</a></li>
-                <li><a href="polyatomic.html" class="hover-underline-animation">Polyatomic Ions</a></li>
-                <li><a href="solubility.html" class="hover-underline-animation">Solubility Rules</a></li>
-                <li><a href="formulas.html" class="selected-tab">Formulas</a></li>
-                <li><a href="exam.html" class="hover-underline-animation">Practice Exams</a></li>
-                <li><a href="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/nelsonchemistry11u.pdf?alt=media&token=b52fbaf7-0251-4bc5-bc3c-f081bff30b06" target="_blank" class="hover-underline-animation">Textbook</a></li>
-                <li><a href="feedback.html" style="margin: 0% 1%"><button>Feedback</button></a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="equations-cards-container">
-        <div class="card">
-            <h2 class="subtitle">Percentage Yield</h2>
-            <math class="math">
-                <mi>Percentage Yield</mi>
-                <mo>=</mo>
-                <mn>|</mn>
-                <mfrac>
-                    <mi>Actual Yield</mi>
-                    <mi>Theoretical Yield</mi>
-                </mfrac>
-                <mn>|</mn>
-                <mo>x</mo>
-                <mn>100%</mn>
-            </math>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="shortcut icon" href="./images/logos/favicon.png" />
+    </head>
+    <body>
+        <div class="navbar sticky">
+            <nav>
+                <a href="index.html" style="margin: 0% 2%;"
+                    ><img src="./images/logos/favicon.png"
+                /></a>
+                <a href="JavaScript:void(0)" id="burger"
+                    ><i class="fas fa-bars"></i
+                ></a>
+                <ul class="navbar-links">
+                    <li>
+                        <a href="index.html" class="hover-underline-animation"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="definitions.html"
+                            class="hover-underline-animation"
+                            >Definitions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="periodictable.html"
+                            class="hover-underline-animation"
+                            >Periodic Table</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="polyatomic.html"
+                            class="hover-underline-animation"
+                            >Polyatomic Ions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="solubility.html"
+                            class="hover-underline-animation"
+                            >Solubility Rules</a
+                        >
+                    </li>
+                    <li>
+                        <a href="formulas.html" class="selected-tab"
+                            >Formulas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="exam.html" class="hover-underline-animation"
+                            >Practice Exams</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/nelsonchemistry11u.pdf?alt=media&token=b52fbaf7-0251-4bc5-bc3c-f081bff30b06"
+                            target="_blank"
+                            class="hover-underline-animation"
+                            >Textbook</a
+                        >
+                    </li>
+                    <li>
+                        <a href="feedback.html" style="margin: 0% 1%;"
+                            ><button>Feedback</button></a
+                        >
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="card">
-            <h2 class="subtitle">Percentage Purity</h2>
-            <math class="math">
-                <mi>Percentage Purity</mi>
-                <mo>=</mo>
-                <mn>|</mn>
-                <mfrac>
-                    <mi>Pure</mi>
-                    <mi>Impure</mi>
-                </mfrac>
-                <mn>|</mn>
-                <mo>x</mo>
-                <mn>100%</mn>
-            </math>
+        <div id="equations-cards-container">
+            <div class="card">
+                <h2 class="subtitle">Percentage Yield</h2>
+                <math class="math">
+                    <mi>Percentage Yield</mi>
+                    <mo>=</mo>
+                    <mn>|</mn>
+                    <mfrac>
+                        <mi>Actual Yield</mi>
+                        <mi>Theoretical Yield</mi>
+                    </mfrac>
+                    <mn>|</mn>
+                    <mo>x</mo>
+                    <mn>100%</mn>
+                </math>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">Percentage Purity</h2>
+                <math class="math">
+                    <mi>Percentage Purity</mi>
+                    <mo>=</mo>
+                    <mn>|</mn>
+                    <mfrac>
+                        <mi>Pure</mi>
+                        <mi>Impure</mi>
+                    </mfrac>
+                    <mn>|</mn>
+                    <mo>x</mo>
+                    <mn>100%</mn>
+                </math>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">Dilution Formula</h2>
+                <math class="math">
+                    <mn>
+                        <msub>
+                            <mi>C</mi>
+                            <mn>i</mn>
+                        </msub>
+                    </mn>
+                    <mn>
+                        <msub>
+                            <mi>V</mi>
+                            <mn>i</mn>
+                        </msub>
+                    </mn>
+                    <mo>=</mo>
+                    <mn>
+                        <msub>
+                            <mi>C</mi>
+                            <mn>f</mn>
+                        </msub>
+                    </mn>
+                    <mn>
+                        <msub>
+                            <mi>V</mi>
+                            <mn>f</mn>
+                        </msub>
+                    </mn>
+                </math>
+                <h3>C<sub>i</sub> = Initial Concentration</h3>
+                <h3>V<sub>i</sub> = Initial Volume</h3>
+                <h3>C<sub>f</sub> = Final Concentration</h3>
+                <h3>V<sub>f</sub> = Final Volume</h3>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">pH</h2>
+                <math class="math">
+                    <mo>-</mo>
+                    <mn>log</mn>
+                    <msup>
+                        <mi>H</mi>
+                        <mi>+</mi>
+                    </msup>
+                </math>
+                <h3>H<sup>+</sup> = Concentration of Hydrogen Ions</h3>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">pOH</h2>
+                <math class="math">
+                    <mo>-</mo>
+                    <mn>log</mn>
+                    <msup>
+                        <mi>OH</mi>
+                        <mi>-</mi>
+                    </msup>
+                </math>
+                <h3>H<sup>+</sup> = Concentration of Hydroxide Ions</h3>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">Rate Law</h2>
+                <h3>Zero Order</h3>
+                <math class="math">
+                    <mn>
+                        <mn>Rate</mn>
+                        <mo>=</mo>
+                        <mn>k</mn>
+                    </mn>
+                </math>
+                <h3>Integrated Zero Order</h3>
+                <math class="math">
+                    <mn>
+                        <mi>[A]</mi>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <mi>kt</mi>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>[A]</mi>
+                            <mi>o</mi>
+                        </msub>
+                    </mn>
+                </math>
+                <h3>First Order</h3>
+                <math class="math">
+                    <mn>
+                        <mn>Rate</mn>
+                        <mo>=</mo>
+                        <mn>k[A]</mn>
+                    </mn>
+                </math>
+                <h3>Integrated First Order</h3>
+                <math class="math">
+                    <mn>
+                        <mi>ln[A]</mi>
+                        <mo>=</mo>
+                        <mo>-</mo>
+                        <mi>kt</mi>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>ln[A]</mi>
+                            <mi>o</mi>
+                        </msub>
+                    </mn>
+                </math>
+                <h3>Second Order</h3>
+                <math class="math">
+                    <mn>
+                        <mn>Rate</mn>
+                        <mo>=</mo>
+                        <mn>k</mn>
+                        <msup>
+                            <mn>[A]</mn>
+                            <mn>2</mn>
+                        </msup>
+                    </mn>
+                </math>
+                <h3>Integrated Second Order</h3>
+                <math class="math">
+                    <mn>
+                        <msup>
+                            <mn></mn>
+                            <mi>1</mi>
+                        </msup>
+                        <mo>/</mo>
+                        <msub>
+                            <mn></mn>
+                            <mi>[A]</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>kt</mi>
+                        <mo>+</mo>
+                        <msup>
+                            <mn></mn>
+                            <mi>1</mi>
+                        </msup>
+                        <mo>/</mo>
+                        <msub>
+                            <mn></mn>
+                            <mi>[A]</mi>
+                        </msub>
+                        <msub>
+                            <mn></mn>
+                            <msub>
+                                <mn></mn>
+                                <mo>o</mo>
+                            </msub>
+                        </msub>
+                    </mn>
+                </math>
+            </div>
+            <div class="card">
+                <h2 class="subtitle">Ideal Gas Law</h2>
+                <math class="math">
+                    <mn>PV</mn>
+                    <mo>=</mo>
+                    <mn>nRT</mn>
+                </math>
+                <h3>P = Pressure (atm, kPa, ton)</h3>
+                <h3>V = Volume</h3>
+                <h3>n = Mole (mol)</h3>
+                <h3>R = Gas Constant</h3>
+                <h3>T = Temperature in Kelvin (K)</h3>
+            </div>
         </div>
-        <div class="card">
-            <h2 class="subtitle">Dilution Formula</h2>
-            <math class="math">
-                <mn>
-                    <msub>
-                        <mi>C</mi>
-                        <mn>i</mn>
-                    </msub>
-                </mn>
-                <mn>
-                    <msub>
-                        <mi>V</mi>
-                        <mn>i</mn>
-                    </msub>
-                </mn>
-                <mo>=</mo>
-                <mn>
-                    <msub>
-                        <mi>C</mi>
-                        <mn>f</mn>
-                    </msub>
-                </mn>
-                <mn>
-                    <msub>
-                        <mi>V</mi>
-                        <mn>f</mn>
-                    </msub>
-                </mn>
-            </math>
-            <h3>C<sub>i</sub> = Initial Concentration</h3>
-            <h3>V<sub>i</sub> = Initial Volume</h3>
-            <h3>C<sub>f</sub> = Final Concentration</h3>
-            <h3>V<sub>f</sub> = Final Volume</h3>
-        </div>
-        <div class="card">
-            <h2 class="subtitle">pH</h2>
-            <math class="math">
-                <mo>-</mo>
-                <mn>log</mn>
-                <msup>
-                    <mi>H</mi>
-                    <mi>+</mi>
-                </msup>
-            </math>
-            <h3>H<sup>+</sup> = Concentration of Hydrogen Ions</h3>
-        </div>
-        <div class="card">
-            <h2 class="subtitle">pOH</h2>
-            <math class="math">
-                <mo>-</mo>
-                <mn>log</mn>
-                <msup>
-                    <mi>OH</mi>
-                    <mi>-</mi>
-                </msup>
-            </math>
-            <h3>H<sup>+</sup> = Concentration of Hydroxide Ions</h3>
-        </div>
-        <div class="card">
-            <h2 class="subtitle">Rate Law</h2>
-            <h3>Zero Order</h3>
-            <math class="math">
-              <mn>
-                <mn>Rate</mn>
-                <mo>=</mo>
-                <mn>k</mn>
-              </mn>
-            </math>
-            <h3>Integrated Zero Order</h4>
-            <math class="math">
-              <mn>
-                  <mi>[A]</mi>
-                  <mo>=</mo>
-                  <mo>-</mo>
-                  <mi>kt</mi>
-                  <mo>+</mo>
-                  <msub>
-                      <mi>[A]</mi>
-                      <mi>o</mi>
-                  </msub>
-              </mn>
-            </math>
-            <h3>First Order</h3>
-            <math class="math">
-              <mn>
-                <mn>Rate</mn>
-                <mo>=</mo>
-                <mn>k[A]</mn>
-              </mn>
-            </math>
-            <h3>Integrated First Order</h4>
-            <math class="math">
-              <mn>
-                  <mi>ln[A]</mi>
-                  <mo>=</mo>
-                  <mo>-</mo>
-                  <mi>kt</mi>
-                  <mo>+</mo>
-                  <msub>
-                      <mi>ln[A]</mi>
-                      <mi>o</mi>
-                  </msub>
-              </mn>
-            </math>
-            <h3>Second Order</h3>
-            <math class="math">
-              <mn>
-                <mn>Rate</mn>
-                <mo>=</mo>
-                <mn>k</mn>
-                <msup>
-                  <mn>[A]</mn>
-                  <mn>2</mn>
-                </msup>
-              </mn>
-            </math>
-            <h3>Integrated Second Order</h4>
-            <math class="math">
-              <mn>
-                  <msup>
-                    <mn></mn>
-                    <mi>1</mi>
-                  </msup>
-                  <mo>/</mo>
-                  <msub>
-                    <mn></mn>
-                    <mi>[A]</mi>
-                  </msub>
-                  <mo>=</mo>
-                  <mi>kt</mi>
-                  <mo>+</mo>
-                  <msup>
-                    <mn></mn>
-                    <mi>1</mi>
-                  </msup>
-                  <mo>/</mo>
-                  <msub>
-                    <mn></mn>
-                    <mi>[A]</mi>
-                  </msub>
-                  <msub>
-                    <mn></mn>
-                    <msub>
-                      <mn></mn>
-                      <mo>o</mo>
-                    </msub>
-                  </msub>
-
-              </mn>
-            </math>
-        </div>
-        <div class="card">
-            <h2 class="subtitle">Ideal Gas Law</h2>
-            <math class="math">
-                <mn>PV</mn>
-                <mo>=</mo>
-                <mn>nRT</mn>
-            </math>
-            <h3>P = Pressure (atm, kPa, ton)</h3>
-            <h3>V = Volume</h3>
-            <h3>n = Mole (mol)</h3>
-            <h3>R = Gas Constant</h3>
-            <h3>T = Temperature in Kelvin (K)</h3>
-        </div>
-    </div>
-    <script src="js/nav.js"></script>
-</body>
-<footer>
-    <a href="https://github.com/RyanL123" target="_blank"><img src="./images/logos/GitHubLogo.png" title="GitHub" height=32px width=32px></a>
-    <a href="https://www.instagram.com/ryan.lllllll/" target="_blank"><img src="./images/logos/InstagramLogo.png" title="Instagram" height=32px width=32px></a>
-    <a href="https://discordapp.com/users/231592825349734402" target="_blank"><img src="./images/logos/DiscordLogo.png" title="Discord" height=32px width=32px></a>
-</footer>
+        <script src="js/nav.js"></script>
+    </body>
+    <footer>
+        <a href="https://github.com/RyanL123" target="_blank"
+            ><img
+                src="./images/logos/GitHubLogo.png"
+                title="GitHub"
+                height="32px"
+                width="32px"
+                alt="github"
+        /></a>
+        <a href="https://www.instagram.com/ryan.lllllll/" target="_blank"
+            ><img
+                src="./images/logos/InstagramLogo.png"
+                title="Instagram"
+                height="32px"
+                width="32px"
+                alt="instagram"
+        /></a>
+        <a
+            href="https://discordapp.com/users/231592825349734402"
+            target="_blank"
+            ><img
+                src="./images/logos/DiscordLogo.png"
+                title="Discord"
+                height="32px"
+                width="32px"
+                alt="discord"
+        /></a>
+    </footer>
 </html>
