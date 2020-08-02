@@ -1,154 +1,310 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    <head>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
 
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/c7434d4388.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
-    <script src="js/contributors.js"></script>
-    <script src="js/responsiveNav.js"></script>
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/c7434d4388.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/index.js"></script>
+        <script src="js/contributors.js"></script>
+        <script src="js/responsiveNav.js"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153551737-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-153551737-1');
-    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-153551737-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-153551737-1");
+        </script>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet", type="text/css", href="css/index.css">
-    <link rel="shortcut icon" href="./images/logos/favicon.png">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" , type="text/css" , href="css/index.css" />
+        <link rel="shortcut icon" href="./images/logos/favicon.png" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chemistry 11</title>
-</head>
-<body>
-    <div class="navbar sticky">
-        <nav>
-            <a href="index.html" style="margin: 0% 2%"><img src="./images/logos/favicon.png"></a>
-            <a href="JavaScript:void(0)" id="burger"><i class="fas fa-bars"></i></a>
-            <ul class="navbar-links">
-                <li><a href="index.html" class="selected-tab">Home</a></li>
-                <li><a href="definitions.html" class="hover-underline-animation">Definitions</a></li>
-                <li><a href="periodictable.html" class="hover-underline-animation">Periodic Table</a></li>
-                <li><a href="polyatomic.html" class="hover-underline-animation">Polyatomic Ions</a></li>
-                <li><a href="solubility.html" class="hover-underline-animation">Solubility Rules</a></li>
-                <li><a href="formulas.html" class="hover-underline-animation">Formulas</a></li>
-                <li><a href="exam.html" class="hover-underline-animation">Practice Exams</a></li>
-                <li><a href="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/nelsonchemistry11u.pdf?alt=media&token=b52fbaf7-0251-4bc5-bc3c-f081bff30b06" target="_blank" class="hover-underline-animation">Textbook</a></li>
-                <li><a href="feedback.html" style="margin: 0% 1%"><button>Feedback</button></a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="main-title">
-        <div id="desktop-bar">
-            This site is best viewed on desktop
-            <button id="close-notification-button" onclick="hideDesktopBar()">Ok</button>
+        <!-- SEO -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Chemistry 11</title>
+        <meta name="title" content="Chemistry 11" />
+        <meta
+            name="description"
+            content="Easily study and review Grade 11 Chemistry topics and concepts."
+        />
+        <!-- open graph protocol -->
+        <meta
+            property="og:url"
+            content="https://chemistry-11.firebaseapp.com/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Chemistry 11" />
+        <meta
+            property="og:description"
+            content="Easily study and review Grade 11 Chemistry topics and concepts."
+        />
+        <meta
+            property="og:image"
+            content="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/banner.png?alt=media&token=69431942-52a1-4da1-a705-93c3e2394c8d"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <mega property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <!-- twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta
+            property="twitter:url"
+            content="https://chemistry-11.firebaseapp.com/"
+        />
+        <meta property="twitter:title" content="Chemistry 11" />
+        <meta
+            property="twitter:description"
+            content="Easily study and review Grade 11 Chemistry topics and concepts."
+        />
+        <meta
+            property="twitter:image"
+            content="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/banner.png?alt=media&token=69431942-52a1-4da1-a705-93c3e2394c8d"
+        />
+    </head>
+    <body>
+        <div class="navbar sticky">
+            <nav>
+                <a href="index.html" style="margin: 0% 2%;"
+                    ><img src="./images/logos/favicon.png"
+                /></a>
+                <a href="JavaScript:void(0)" id="burger"
+                    ><i class="fas fa-bars"></i
+                ></a>
+                <ul class="navbar-links">
+                    <li><a href="index.html" class="selected-tab">Home</a></li>
+                    <li>
+                        <a
+                            href="definitions.html"
+                            class="hover-underline-animation"
+                            >Definitions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="periodictable.html"
+                            class="hover-underline-animation"
+                            >Periodic Table</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="polyatomic.html"
+                            class="hover-underline-animation"
+                            >Polyatomic Ions</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="solubility.html"
+                            class="hover-underline-animation"
+                            >Solubility Rules</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="formulas.html"
+                            class="hover-underline-animation"
+                            >Formulas</a
+                        >
+                    </li>
+                    <li>
+                        <a href="exam.html" class="hover-underline-animation"
+                            >Practice Exams</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://firebasestorage.googleapis.com/v0/b/chemistry-11.appspot.com/o/nelsonchemistry11u.pdf?alt=media&token=b52fbaf7-0251-4bc5-bc3c-f081bff30b06"
+                            target="_blank"
+                            class="hover-underline-animation"
+                            >Textbook</a
+                        >
+                    </li>
+                    <li>
+                        <a href="feedback.html" style="margin: 0% 1%;"
+                            ><button>Feedback</button></a
+                        >
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="center-align">
-            <h1 class="title">Chemistry 11</h1>
-            <div id="down-arrow">
-                <img onclick="smoothScroll()" src="images/down-arrow.png" width=50>
+        <div id="main-title">
+            <div id="desktop-bar">
+                This site is best viewed on desktop
+                <button
+                    id="close-notification-button"
+                    onclick="hideDesktopBar()"
+                >
+                    Ok
+                </button>
+            </div>
+            <div class="center-align">
+                <h1 class="title">Chemistry 11</h1>
+                <div id="down-arrow">
+                    <img
+                        onclick="smoothScroll()"
+                        src="images/down-arrow.png"
+                        width="50"
+                    />
+                </div>
             </div>
         </div>
-    </div>
-    <div id="site-features">
-        <div id="site-features-title">
-            <h1 class="title">Why should you use this?</h1>
+        <div id="site-features">
+            <div id="site-features-title">
+                <h1 class="title">Why should you use this?</h1>
+            </div>
+            <div class="flex-box">
+                <div class="site-features-card">
+                    <i class="fas fa-flask fa-3x"></i>
+                    <div class="site-features-card-content">
+                        <h2 class="subtitle">All-In-One</h2>
+                        <p>
+                            Everything you need for Gr 11 Chem grouped in one
+                            place
+                        </p>
+                    </div>
+                </div>
+                <div class="site-features-card">
+                    <i class="fas fa-scroll fa-3x"></i>
+                    <div class="site-features-card-content">
+                        <h2 class="subtitle">Practice Exams</h2>
+                        <p>
+                            2 original practice exams that cover everything
+                            learned throughout the semester
+                        </p>
+                    </div>
+                </div>
+                <div class="site-features-card">
+                    <i class="fas fa-list-ul fa-3x"></i>
+                    <div class="site-features-card-content">
+                        <h2 class="subtitle">Compact Definitions</h2>
+                        <p>Summarized definition of any concept or topic</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex-box">
-            <div class="site-features-card">
-                <i class="fas fa-flask fa-3x"></i>
-                <div class="site-features-card-content">
-                    <h2 class="subtitle">All-In-One</h2>
-                    <p>Everything you need for Gr 11 Chem grouped in one place
+        <div id="site-stats">
+            <div class="flex-box">
+                <div class="site-stats-card">
+                    <h1 class="subtitle">75+</h1>
+                    <h2 class="subtitle">Definitions and Concepts</h2>
+                </div>
+                <div class="site-stats-card">
+                    <h1 class="subtitle">30+</h1>
+                    <h2 class="subtitle">Polyatomic Ions</h2>
+                </div>
+            </div>
+        </div>
+        <div id="FAQ">
+            <div id="FAQ-title">
+                <h1 class="title">FAQ</h1>
+            </div>
+            <div class="flex-box">
+                <div class="FAQ-info-left">
+                    <h2 class="subtitle">What's this for?</h2>
+                    <p>
+                        This website is intended to summarize all the Chemistry
+                        definitions and concepts in the Gr 11 Curriculum in a
+                        simple way. The list is by no means complete, and if you
+                        want to contribute, please refer to the contributing
+                        section. This is my first ever web project, and this
+                        site is a work in progress. If there are any problems,
+                        please give me feedback on how the site could be
+                        improved using the
+                        <a href="feedback.html">Feedback Form</a>, or contact me
+                        using one of the methods below.
+                    </p>
+                </div>
+                <div class="FAQ-info-right">
+                    <h2 class="subtitle">Contributing</h2>
+                    <p>
+                        Whether you want to add a definition, implement a new
+                        feature, or improve upon something that exists, simply
+                        <a
+                            href="https://github.com/RyanL123/Chemistry-11"
+                            target="_blank"
+                            >fork this repo on GitHub</a
+                        >, create a new branch, and submit a pull request. Don't
+                        know git or never heard of GitHub? You can still
+                        contribute! Simply submit any suggestions or feedback
+                        using the <a href="feedback.html">Feedback Form</a>.
                     </p>
                 </div>
             </div>
-            <div class="site-features-card">
-                <i class="fas fa-scroll fa-3x"></i>
-                <div class="site-features-card-content">
-                    <h2 class="subtitle">Practice Exams</h2>
-                    <p>2 original practice exams that cover everything learned throughout the semester</p>
+            <div class="flex-box">
+                <div class="FAQ-info-left">
+                    <h2 class="subtitle">Help! I can't open the textbook!</h2>
+                    <p>
+                        This means you're most likely on the GitHub pages site.
+                        As GitHub doesn't allow for anything over 100mb to be
+                        uploaded, the textbook will not be accessible from
+                        GitHub Pages. Use the
+                        <a href="https://chemistry-11.firebaseapp.com/"
+                            >Firebase hosted version</a
+                        >
+                        to be able to access the Nelson 11 textbook.
+                    </p>
+                </div>
+                <div class="FAQ-info-right">
+                    <h2 class="subtitle">
+                        How was this made? Anything else like this?
+                    </h2>
+                    <p>
+                        This site was made with plain HTML, CSS, and Javascript.
+                        Hosting is done with Firebase. This is currently the
+                        only site I have made, more sites like Functions 11,
+                        Physics 11 will be created in the future, given that I
+                        have enough time.
+                    </p>
                 </div>
             </div>
-            <div class="site-features-card">
-                <i class="fas fa-list-ul fa-3x"></i>
-                <div class="site-features-card-content">
-                    <h2 class="subtitle">Compact Definitions</h2>
-                    <p>Summarized definition of any concept or topic</p>
-                </div>
-            </div>
         </div>
-    </div>
-    <div id="site-stats">
-        <div class="flex-box">
-            <div class="site-stats-card">
-                <h1 class="subtitle">75+</h1>
-                <h2 class="subtitle">Definitions and Concepts</h2>
-            </div>
-            <div class="site-stats-card">
-                <h1 class="subtitle">30+</h1>
-                <h2 class="subtitle">Polyatomic Ions</h2>
-            </div>
+        <div id="contributors">
+            <h2 class="subtitle">Contributors</h2>
+            <p>(Contributors are retrieved using GitHub's REST API)</p>
         </div>
-    </div>
-    <div id="FAQ"> 
-        <div id="FAQ-title">
-            <h1 class="title">FAQ</h1>
-        </div>
-        <div class="flex-box">
-            <div class="FAQ-info-left">
-                <h2 class="subtitle">What's this for?</h2>
-                <p> This website is intended to summarize all the Chemistry definitions and concepts 
-                    in the Gr 11 Curriculum in a simple way. The list is by no means complete, and if you want to contribute, 
-                    please refer to the contributing section. This is my first ever web project, and this site is a work in progress. 
-                    If there are any problems, please give me feedback on how the site could be improved using the 
-                    <a href="feedback.html">Feedback Form</a>, or contact me using one of the methods below.
-                </p>
-            </div>
-            <div class="FAQ-info-right">
-                <h2 class="subtitle">Contributing</h2>
-                <p>Whether you want to add a definition, implement a new feature, or improve upon something that exists, simply
-                    <a href="https://github.com/RyanL123/Chemistry-11" target="_blank">fork this repo on GitHub</a>, create a new branch,
-                    and submit a pull request. Don't know git or never heard of GitHub? You can still contribute! Simply submit any suggestions or
-                    feedback using the <a href="feedback.html">Feedback Form</a>.
-                </p>
-            </div>
-        </div>
-        <div class="flex-box">
-            <div class="FAQ-info-left">
-                <h2 class="subtitle">Help! I can't open the textbook!</h2>
-                <p>This means you're most likely on the GitHub pages site. As GitHub doesn't allow for anything over 100mb to be uploaded, 
-                    the textbook will not be accessible from GitHub Pages. Use the <a href="https://chemistry-11.firebaseapp.com/">Firebase hosted version</a> to be able to 
-                    access the Nelson 11 textbook.
-                </p>
-            </div>
-            <div class="FAQ-info-right">
-                <h2 class="subtitle">How was this made? Anything else like this?</h2>
-                <p>This site was made with plain HTML, CSS, and Javascript. Hosting is done with Firebase. This is currently the only site I have made, 
-                    more sites like Functions 11, Physics 11 will be created in the future, given that I have enough time.</p>
-            </div>
-        </div>
-    </div>
-    <div id="contributors">
-        <h2 class="subtitle">Contributors</h2>
-        <p>(Contributors are retrieved using GitHub's REST API)</p>
-    </div>
-    <script src="js/nav.js"></script>
-<footer>
-    <a href="https://github.com/RyanL123" target="_blank"><img src="./images/logos/GitHubLogo.png" title="GitHub" height=32px width=32px></a>
-    <a href="https://www.instagram.com/ryan.lllllll/" target="_blank"><img src="./images/logos/InstagramLogo.png" title="Instagram" height=32px width=32px></a>
-    <a href="https://discordapp.com/users/231592825349734402" target="_blank"><img src="./images/logos/DiscordLogo.png" title="Discord" height=32px width=32px></a>
-</footer>
-</body>
+        <script src="js/nav.js"></script>
+        <footer>
+            <a href="https://github.com/RyanL123" target="_blank"
+                ><img
+                    src="./images/logos/GitHubLogo.png"
+                    title="GitHub"
+                    height="32px"
+                    width="32px"
+            /></a>
+            <a href="https://www.instagram.com/ryan.lllllll/" target="_blank"
+                ><img
+                    src="./images/logos/InstagramLogo.png"
+                    title="Instagram"
+                    height="32px"
+                    width="32px"
+            /></a>
+            <a
+                href="https://discordapp.com/users/231592825349734402"
+                target="_blank"
+                ><img
+                    src="./images/logos/DiscordLogo.png"
+                    title="Discord"
+                    height="32px"
+                    width="32px"
+            /></a>
+        </footer>
+    </body>
 </html>
